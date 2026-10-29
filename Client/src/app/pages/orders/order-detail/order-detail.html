@@ -1,0 +1,77 @@
+<div class="container page">
+  <a routerLink="/orders" class="muted back"><mat-icon>arrow_back</mat-icon> All orders</a>
+  @if (o(); as o) {
+    <div class="row between wrap head">
+      <div>
+        <h1 class="page-title">{{ o.orderNumber }}</h1>
+        <span class="muted">Placed {{ o.createdAt | date: 'medium' }}</span>
+      </div>
+      <span class="status" [class]="o.status">{{ o.status }}</span>
+    </div>
+
+    @if (o.status !== 'cancelled') {
+      <div class="track card">
+        @for (s of flow; track s; let i = $index) {
+          <div class="step" [class.done]="i <= idx(o.status)">
+            <span class="dot">
+              @if (i <= idx(o.status)) {
+                <mat-icon>check</mat-icon>
+              }</span
+            ><span>{{ s }}</span>
+          </div>
+        }
+      </div>
+    }
+
+    <div class="layout-2">
+      <div class="card stack">
+        @for (i of o.items; track i.sku) {
+          <div class="row line">
+            <div class="thumb">
+              @if (i.image) {
+                <img [src]="i.image" alt="" />
+              }
+            </div>
+            <div class="grow">
+              <b>{{ i.name }}</b>
+              <div class="muted">{{ i.color }} {{ i.size }} · Qty {{ i.quantity }}</div>
+            </div>
+            <b>{{ i.price * i.quantity | currency }}</b>
+          </div>
+        }
+      </div>
+      <div class="stack">
+        <div class="card stack">
+          <h3>Summary</h3>
+          <div class="row between">
+            <span class="muted">Subtotal</span>{{ o.subtotal | currency }}
+          </div>
+          <div class="row between">
+            <span class="muted">Shipping</span
+            >{{ o.shippingFee ? (o.shippingFee | currency) : 'Free' }}
+          </div>
+          <div class="row between"><span class="muted">Tax</span>{{ o.tax | currency }}</div>
+          <div class="row between total"><span>Total</span>{{ o.total | currency }}</div>
+          <span class="muted"
+            >{{ o.paymentMethod === 'cod' ? 'Cash on delivery' : 'Card' }} ·
+            {{ o.isPaid ? 'Paid' : 'Unpaid' }}</span
+          >
+        </div>
+        <div class="card">
+          <h3>Ship to</h3>
+          <p class="muted addr">
+            {{ o.shippingAddress.fullName }}<br />{{ o.shippingAddress.street }}<br />{{
+              o.shippingAddress.city
+            }}
+            {{ o.shippingAddress.postalCode }}<br />{{ o.shippingAddress.country }}<br />{{
+              o.shippingAddress.phone
+            }}
+          </p>
+        </div>
+        @if (['pending', 'paid', 'processing'].includes(o.status)) {
+          <button mat-stroked-button (click)="cancel(o)">Cancel order</button>
+        }
+      </div>
+    </div>
+  }
+</div>

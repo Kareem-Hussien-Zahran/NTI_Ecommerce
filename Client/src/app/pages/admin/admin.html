@@ -1,0 +1,12 @@
+<div class="container page admin">
+  <aside class="card nav">
+    <h3>Admin</h3>
+    @for (l of links; track l.path) {
+      <a [routerLink]="l.path" routerLinkActive="on"
+        ><mat-icon>{{ l.icon }}</mat-icon
+        ><span>{{ l.label }}</span></a
+      >
+    }
+  </aside>
+  <section class="content"><router-outlet /></section>
+</div>

@@ -1,0 +1,79 @@
+<div class="container page">
+  <h1 class="page-title">Checkout</h1>
+  @if (!cart.cart().items.length) {
+    <div class="empty">
+      <mat-icon>shopping_bag</mat-icon>
+      <p>Your cart is empty.</p>
+      <a mat-flat-button routerLink="/shop">Shop</a>
+    </div>
+  } @else {
+    <form class="layout-2" [formGroup]="form" (ngSubmit)="place()">
+      <div class="stack">
+        <section class="card stack">
+          <h3>Shipping address</h3>
+          <div class="grid-2">
+            <mat-form-field
+              ><mat-label>Full name</mat-label><input matInput formControlName="fullName"
+            /></mat-form-field>
+            <mat-form-field
+              ><mat-label>Phone</mat-label><input matInput formControlName="phone"
+            /></mat-form-field>
+          </div>
+          <mat-form-field
+            ><mat-label>Street address</mat-label><input matInput formControlName="street"
+          /></mat-form-field>
+          <div class="grid-2">
+            <mat-form-field
+              ><mat-label>City</mat-label><input matInput formControlName="city"
+            /></mat-form-field>
+            <mat-form-field
+              ><mat-label>State / Region</mat-label><input matInput formControlName="state"
+            /></mat-form-field>
+            <mat-form-field
+              ><mat-label>Postal code</mat-label><input matInput formControlName="postalCode"
+            /></mat-form-field>
+            <mat-form-field
+              ><mat-label>Country</mat-label><input matInput formControlName="country"
+            /></mat-form-field>
+          </div>
+        </section>
+        <section class="card stack">
+          <h3>Payment</h3>
+          <mat-radio-group formControlName="paymentMethod" class="stack">
+            <mat-radio-button value="cod">Cash on delivery</mat-radio-button>
+            <mat-radio-button value="card">Card (demo — no real charge)</mat-radio-button>
+          </mat-radio-group>
+        </section>
+      </div>
+      <aside class="card stack sum">
+        <h3>Summary</h3>
+        @for (l of cart.cart().items; track l.product + l.sku) {
+          <div class="row between sm">
+            <span
+              >{{ l.quantity }} × {{ l.name }} <span class="muted">{{ l.size }}</span></span
+            ><span>{{ l.lineTotal | currency }}</span>
+          </div>
+        }
+        <hr />
+        <div class="row between">
+          <span class="muted">Subtotal</span><span>{{ cart.cart().subtotal | currency }}</span>
+        </div>
+        <div class="row between">
+          <span class="muted">Shipping</span
+          ><span>{{
+            cart.cart().shippingFee ? (cart.cart().shippingFee | currency) : 'Free'
+          }}</span>
+        </div>
+        <div class="row between">
+          <span class="muted">Tax</span><span>{{ cart.cart().tax | currency }}</span>
+        </div>
+        <div class="row between total">
+          <span>Total</span><span>{{ cart.cart().total | currency }}</span>
+        </div>
+        <button mat-flat-button class="big" [disabled]="form.invalid || busy()">
+          {{ busy() ? 'Placing order…' : 'Place order' }}
+        </button>
+      </aside>
+    </form>
+  }
+</div>

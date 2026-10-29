@@ -1,0 +1,5475 @@
+[
+ {
+  "_id": {
+   "$oid": "d40000000000000000000001"
+  },
+  "name": "Classic Crew T-Shirt",
+  "slug": "classic-crew-t-shirt",
+  "description": "Classic Crew T-Shirt — test catalog item for the Men T-Shirts collection. Soft, durable and true to size.",
+  "price": 19.99,
+  "compareAtPrice": 24.99,
+  "gender": "men",
+  "productType": "t-shirt",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000005"
+  },
+  "subcategory": null,
+  "tags": [
+   "basic",
+   "cotton"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-classic-crew-t-shirt-black.svg",
+   "/uploads/test-classic-crew-t-shirt-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000001"
+    },
+    "sku": "CLASSICC-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 16,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000002"
+    },
+    "sku": "CLASSICC-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 9,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000003"
+    },
+    "sku": "CLASSICC-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 14,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000004"
+    },
+    "sku": "CLASSICC-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 26,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000005"
+    },
+    "sku": "CLASSICC-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 20,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "CLASSICC-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 13,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "CLASSICC-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 35,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "CLASSICC-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 27,
+    "images": [
+     "/uploads/test-classic-crew-t-shirt-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": true,
+  "isActive": true,
+  "ratingAverage": 5,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-06-22T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-22T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000002"
+  },
+  "name": "Graphic Print Tee",
+  "slug": "graphic-print-tee",
+  "description": "Graphic Print Tee — test catalog item for the Men T-Shirts collection. Soft, durable and true to size.",
+  "price": 24.5,
+  "gender": "men",
+  "productType": "t-shirt",
+  "brand": {
+   "$oid": "b30000000000000000000003"
+  },
+  "category": {
+   "$oid": "c20000000000000000000005"
+  },
+  "subcategory": null,
+  "tags": [
+   "graphic",
+   "cotton"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-graphic-print-tee-crimson.svg",
+   "/uploads/test-graphic-print-tee-white.svg",
+   "/uploads/test-graphic-print-tee-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000002"
+    },
+    "sku": "GRAPHICP-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 10,
+    "images": [
+     "/uploads/test-graphic-print-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000003"
+    },
+    "sku": "GRAPHICP-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 17,
+    "images": [
+     "/uploads/test-graphic-print-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000004"
+    },
+    "sku": "GRAPHICP-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-graphic-print-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000005"
+    },
+    "sku": "GRAPHICP-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 32,
+    "images": [
+     "/uploads/test-graphic-print-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "GRAPHICP-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 32,
+    "images": [
+     "/uploads/test-graphic-print-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "GRAPHICP-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 40,
+    "images": [
+     "/uploads/test-graphic-print-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "GRAPHICP-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-graphic-print-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "GRAPHICP-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 10,
+    "images": [
+     "/uploads/test-graphic-print-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "GRAPHICP-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 25,
+    "images": [
+     "/uploads/test-graphic-print-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "GRAPHICP-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-graphic-print-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "GRAPHICP-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 15,
+    "images": [
+     "/uploads/test-graphic-print-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "GRAPHICP-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 17,
+    "images": [
+     "/uploads/test-graphic-print-tee-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4.5,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-07-14T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-14T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000003"
+  },
+  "name": "Oversized Pocket Tee",
+  "slug": "oversized-pocket-tee",
+  "description": "Oversized Pocket Tee — test catalog item for the Men T-Shirts collection. Soft, durable and true to size.",
+  "price": 22,
+  "gender": "unisex",
+  "productType": "t-shirt",
+  "brand": {
+   "$oid": "b30000000000000000000002"
+  },
+  "category": {
+   "$oid": "c20000000000000000000005"
+  },
+  "subcategory": null,
+  "tags": [
+   "oversized"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-oversized-pocket-tee-white.svg",
+   "/uploads/test-oversized-pocket-tee-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000003"
+    },
+    "sku": "OVERSIZE-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 38,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000004"
+    },
+    "sku": "OVERSIZE-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 35,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000005"
+    },
+    "sku": "OVERSIZE-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 8,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "OVERSIZE-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 32,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "OVERSIZE-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 22,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "OVERSIZE-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 31,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "OVERSIZE-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 18,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "OVERSIZE-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 28,
+    "images": [
+     "/uploads/test-oversized-pocket-tee-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 5,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-06-21T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-21T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000004"
+  },
+  "name": "Slim Fit Jeans",
+  "slug": "slim-fit-jeans",
+  "description": "Slim Fit Jeans — test catalog item for the Men Jeans collection. Soft, durable and true to size.",
+  "price": 59.9,
+  "compareAtPrice": 79.9,
+  "gender": "men",
+  "productType": "jeans",
+  "brand": {
+   "$oid": "b30000000000000000000004"
+  },
+  "category": {
+   "$oid": "c20000000000000000000006"
+  },
+  "subcategory": null,
+  "tags": [
+   "denim",
+   "slim"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-slim-fit-jeans-navy.svg",
+   "/uploads/test-slim-fit-jeans-grey.svg",
+   "/uploads/test-slim-fit-jeans-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000004"
+    },
+    "sku": "SLIMFITJ-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 4,
+    "images": [
+     "/uploads/test-slim-fit-jeans-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000005"
+    },
+    "sku": "SLIMFITJ-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 9,
+    "images": [
+     "/uploads/test-slim-fit-jeans-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "SLIMFITJ-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 31,
+    "images": [
+     "/uploads/test-slim-fit-jeans-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "SLIMFITJ-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-slim-fit-jeans-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "SLIMFITJ-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 1,
+    "images": [
+     "/uploads/test-slim-fit-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "SLIMFITJ-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 14,
+    "images": [
+     "/uploads/test-slim-fit-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "SLIMFITJ-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 39,
+    "images": [
+     "/uploads/test-slim-fit-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "SLIMFITJ-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 33,
+    "images": [
+     "/uploads/test-slim-fit-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "SLIMFITJ-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 2,
+    "images": [
+     "/uploads/test-slim-fit-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "SLIMFITJ-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 32,
+    "images": [
+     "/uploads/test-slim-fit-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "SLIMFITJ-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-slim-fit-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "SLIMFITJ-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 39,
+    "images": [
+     "/uploads/test-slim-fit-jeans-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-19T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-19T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000005"
+  },
+  "name": "Straight Leg Jeans",
+  "slug": "straight-leg-jeans",
+  "description": "Straight Leg Jeans — test catalog item for the Men Jeans collection. Soft, durable and true to size.",
+  "price": 64,
+  "gender": "men",
+  "productType": "jeans",
+  "brand": {
+   "$oid": "b30000000000000000000004"
+  },
+  "category": {
+   "$oid": "c20000000000000000000006"
+  },
+  "subcategory": null,
+  "tags": [
+   "denim"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-straight-leg-jeans-grey.svg",
+   "/uploads/test-straight-leg-jeans-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000005"
+    },
+    "sku": "STRAIGHT-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 36,
+    "images": [
+     "/uploads/test-straight-leg-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "STRAIGHT-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 24,
+    "images": [
+     "/uploads/test-straight-leg-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "STRAIGHT-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 17,
+    "images": [
+     "/uploads/test-straight-leg-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "STRAIGHT-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 8,
+    "images": [
+     "/uploads/test-straight-leg-jeans-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "STRAIGHT-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 13,
+    "images": [
+     "/uploads/test-straight-leg-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "STRAIGHT-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 18,
+    "images": [
+     "/uploads/test-straight-leg-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "STRAIGHT-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 22,
+    "images": [
+     "/uploads/test-straight-leg-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "STRAIGHT-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 28,
+    "images": [
+     "/uploads/test-straight-leg-jeans-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-07-27T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-27T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000006"
+  },
+  "name": "Distressed Skinny Jeans",
+  "slug": "distressed-skinny-jeans",
+  "description": "Distressed Skinny Jeans — test catalog item for the Women Tops collection. Soft, durable and true to size.",
+  "price": 69,
+  "compareAtPrice": 89,
+  "gender": "women",
+  "productType": "jeans",
+  "brand": {
+   "$oid": "b30000000000000000000004"
+  },
+  "category": {
+   "$oid": "c20000000000000000000010"
+  },
+  "subcategory": null,
+  "tags": [
+   "denim",
+   "distressed"
+  ],
+  "season": "autumn",
+  "images": [
+   "/uploads/test-distressed-skinny-jeans-black.svg",
+   "/uploads/test-distressed-skinny-jeans-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000006"
+    },
+    "sku": "DISTRESS-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 22,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "DISTRESS-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 0,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "DISTRESS-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 31,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "DISTRESS-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 34,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "DISTRESS-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 31,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "DISTRESS-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 0,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "DISTRESS-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 31,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "DISTRESS-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 33,
+    "images": [
+     "/uploads/test-distressed-skinny-jeans-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 5,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-17T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-17T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000007"
+  },
+  "name": "Bomber Jacket",
+  "slug": "bomber-jacket",
+  "description": "Bomber Jacket — test catalog item for the Men Jackets collection. Soft, durable and true to size.",
+  "price": 119,
+  "compareAtPrice": 149,
+  "gender": "men",
+  "productType": "jacket",
+  "brand": {
+   "$oid": "b30000000000000000000003"
+  },
+  "category": {
+   "$oid": "c20000000000000000000007"
+  },
+  "subcategory": null,
+  "tags": [
+   "outerwear"
+  ],
+  "season": "autumn",
+  "images": [
+   "/uploads/test-bomber-jacket-crimson.svg",
+   "/uploads/test-bomber-jacket-white.svg",
+   "/uploads/test-bomber-jacket-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000007"
+    },
+    "sku": "BOMBERJA-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 40,
+    "images": [
+     "/uploads/test-bomber-jacket-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "BOMBERJA-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 27,
+    "images": [
+     "/uploads/test-bomber-jacket-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "BOMBERJA-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 13,
+    "images": [
+     "/uploads/test-bomber-jacket-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "BOMBERJA-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 9,
+    "images": [
+     "/uploads/test-bomber-jacket-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "BOMBERJA-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 35,
+    "images": [
+     "/uploads/test-bomber-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "BOMBERJA-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 24,
+    "images": [
+     "/uploads/test-bomber-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "BOMBERJA-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 33,
+    "images": [
+     "/uploads/test-bomber-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "BOMBERJA-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 13,
+    "images": [
+     "/uploads/test-bomber-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "BOMBERJA-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 12,
+    "images": [
+     "/uploads/test-bomber-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "BOMBERJA-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 38,
+    "images": [
+     "/uploads/test-bomber-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "BOMBERJA-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-bomber-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "BOMBERJA-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 14,
+    "images": [
+     "/uploads/test-bomber-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": true,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-10T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-10T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000008"
+  },
+  "name": "Leather Biker Jacket",
+  "slug": "leather-biker-jacket",
+  "description": "Leather Biker Jacket — test catalog item for the Men Jackets collection. Soft, durable and true to size.",
+  "price": 249,
+  "gender": "men",
+  "productType": "jacket",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000007"
+  },
+  "subcategory": null,
+  "tags": [
+   "leather",
+   "premium"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-leather-biker-jacket-white.svg",
+   "/uploads/test-leather-biker-jacket-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000008"
+    },
+    "sku": "LEATHERB-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 33,
+    "images": [
+     "/uploads/test-leather-biker-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "LEATHERB-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 32,
+    "images": [
+     "/uploads/test-leather-biker-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "LEATHERB-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 38,
+    "images": [
+     "/uploads/test-leather-biker-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "LEATHERB-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-leather-biker-jacket-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "LEATHERB-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 31,
+    "images": [
+     "/uploads/test-leather-biker-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "LEATHERB-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 34,
+    "images": [
+     "/uploads/test-leather-biker-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "LEATHERB-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 39,
+    "images": [
+     "/uploads/test-leather-biker-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "LEATHERB-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 35,
+    "images": [
+     "/uploads/test-leather-biker-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-06-10T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-10T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000009"
+  },
+  "name": "Windbreaker",
+  "slug": "windbreaker",
+  "description": "Windbreaker — test catalog item for the Men Jackets collection. Soft, durable and true to size.",
+  "price": 79,
+  "gender": "unisex",
+  "productType": "jacket",
+  "brand": {
+   "$oid": "b30000000000000000000002"
+  },
+  "category": {
+   "$oid": "c20000000000000000000007"
+  },
+  "subcategory": null,
+  "tags": [
+   "light"
+  ],
+  "season": "spring",
+  "images": [
+   "/uploads/test-windbreaker-navy.svg",
+   "/uploads/test-windbreaker-grey.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000009"
+    },
+    "sku": "WINDBREA-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 28,
+    "images": [
+     "/uploads/test-windbreaker-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "WINDBREA-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-windbreaker-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "WINDBREA-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 18,
+    "images": [
+     "/uploads/test-windbreaker-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "WINDBREA-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 8,
+    "images": [
+     "/uploads/test-windbreaker-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "WINDBREA-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 37,
+    "images": [
+     "/uploads/test-windbreaker-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "WINDBREA-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 34,
+    "images": [
+     "/uploads/test-windbreaker-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "WINDBREA-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-windbreaker-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "WINDBREA-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 34,
+    "images": [
+     "/uploads/test-windbreaker-grey.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-06-26T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-26T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000010"
+  },
+  "name": "Zip Hoodie",
+  "slug": "zip-hoodie",
+  "description": "Zip Hoodie — test catalog item for the Men Hoodies collection. Soft, durable and true to size.",
+  "price": 54,
+  "gender": "men",
+  "productType": "hoodie",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000008"
+  },
+  "subcategory": null,
+  "tags": [
+   "fleece"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-zip-hoodie-grey.svg",
+   "/uploads/test-zip-hoodie-black.svg",
+   "/uploads/test-zip-hoodie-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000010"
+    },
+    "sku": "ZIPHOODI-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 30,
+    "images": [
+     "/uploads/test-zip-hoodie-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "ZIPHOODI-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 16,
+    "images": [
+     "/uploads/test-zip-hoodie-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "ZIPHOODI-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 11,
+    "images": [
+     "/uploads/test-zip-hoodie-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "ZIPHOODI-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 40,
+    "images": [
+     "/uploads/test-zip-hoodie-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "ZIPHOODI-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 40,
+    "images": [
+     "/uploads/test-zip-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "ZIPHOODI-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 17,
+    "images": [
+     "/uploads/test-zip-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "ZIPHOODI-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-zip-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "ZIPHOODI-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 34,
+    "images": [
+     "/uploads/test-zip-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "ZIPHOODI-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 8,
+    "images": [
+     "/uploads/test-zip-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "ZIPHOODI-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 24,
+    "images": [
+     "/uploads/test-zip-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "ZIPHOODI-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-zip-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "ZIPHOODI-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 37,
+    "images": [
+     "/uploads/test-zip-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-21T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-21T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000011"
+  },
+  "name": "Pullover Hoodie",
+  "slug": "pullover-hoodie",
+  "description": "Pullover Hoodie — test catalog item for the Men Hoodies collection. Soft, durable and true to size.",
+  "price": 49,
+  "compareAtPrice": 59,
+  "gender": "unisex",
+  "productType": "hoodie",
+  "brand": {
+   "$oid": "b30000000000000000000002"
+  },
+  "category": {
+   "$oid": "c20000000000000000000008"
+  },
+  "subcategory": null,
+  "tags": [
+   "fleece",
+   "cozy"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-pullover-hoodie-black.svg",
+   "/uploads/test-pullover-hoodie-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000011"
+    },
+    "sku": "PULLOVER-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 2,
+    "images": [
+     "/uploads/test-pullover-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "PULLOVER-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 24,
+    "images": [
+     "/uploads/test-pullover-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "PULLOVER-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 8,
+    "images": [
+     "/uploads/test-pullover-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "PULLOVER-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 31,
+    "images": [
+     "/uploads/test-pullover-hoodie-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "PULLOVER-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 2,
+    "images": [
+     "/uploads/test-pullover-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "PULLOVER-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 27,
+    "images": [
+     "/uploads/test-pullover-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "PULLOVER-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 24,
+    "images": [
+     "/uploads/test-pullover-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "PULLOVER-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 34,
+    "images": [
+     "/uploads/test-pullover-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 5,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-24T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-24T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000012"
+  },
+  "name": "Cropped Hoodie",
+  "slug": "cropped-hoodie",
+  "description": "Cropped Hoodie — test catalog item for the Women Tops collection. Soft, durable and true to size.",
+  "price": 45,
+  "gender": "women",
+  "productType": "hoodie",
+  "brand": {
+   "$oid": "b30000000000000000000003"
+  },
+  "category": {
+   "$oid": "c20000000000000000000010"
+  },
+  "subcategory": null,
+  "tags": [
+   "cropped"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-cropped-hoodie-crimson.svg",
+   "/uploads/test-cropped-hoodie-white.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000012"
+    },
+    "sku": "CROPPEDH-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 34,
+    "images": [
+     "/uploads/test-cropped-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "CROPPEDH-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 37,
+    "images": [
+     "/uploads/test-cropped-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "CROPPEDH-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 12,
+    "images": [
+     "/uploads/test-cropped-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "CROPPEDH-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 24,
+    "images": [
+     "/uploads/test-cropped-hoodie-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "CROPPEDH-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 31,
+    "images": [
+     "/uploads/test-cropped-hoodie-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "CROPPEDH-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 27,
+    "images": [
+     "/uploads/test-cropped-hoodie-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "CROPPEDH-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 39,
+    "images": [
+     "/uploads/test-cropped-hoodie-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "CROPPEDH-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 14,
+    "images": [
+     "/uploads/test-cropped-hoodie-white.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-26T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-26T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000013"
+  },
+  "name": "Floral Summer Dress",
+  "slug": "floral-summer-dress",
+  "description": "Floral Summer Dress — test catalog item for the Women Dresses collection. Soft, durable and true to size.",
+  "price": 89,
+  "compareAtPrice": 109,
+  "gender": "women",
+  "productType": "dress",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000009"
+  },
+  "subcategory": null,
+  "tags": [
+   "floral",
+   "summer"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-floral-summer-dress-white.svg",
+   "/uploads/test-floral-summer-dress-navy.svg",
+   "/uploads/test-floral-summer-dress-grey.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000013"
+    },
+    "sku": "FLORALSU-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 22,
+    "images": [
+     "/uploads/test-floral-summer-dress-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "FLORALSU-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-floral-summer-dress-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "FLORALSU-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 36,
+    "images": [
+     "/uploads/test-floral-summer-dress-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "FLORALSU-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 13,
+    "images": [
+     "/uploads/test-floral-summer-dress-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "FLORALSU-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 8,
+    "images": [
+     "/uploads/test-floral-summer-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "FLORALSU-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 38,
+    "images": [
+     "/uploads/test-floral-summer-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "FLORALSU-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 36,
+    "images": [
+     "/uploads/test-floral-summer-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "FLORALSU-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 36,
+    "images": [
+     "/uploads/test-floral-summer-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "FLORALSU-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 36,
+    "images": [
+     "/uploads/test-floral-summer-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "FLORALSU-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-floral-summer-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "FLORALSU-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 32,
+    "images": [
+     "/uploads/test-floral-summer-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "FLORALSU-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 30,
+    "images": [
+     "/uploads/test-floral-summer-dress-grey.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": true,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-06-21T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-21T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000014"
+  },
+  "name": "Evening Satin Dress",
+  "slug": "evening-satin-dress",
+  "description": "Evening Satin Dress — test catalog item for the Women Dresses collection. Soft, durable and true to size.",
+  "price": 159,
+  "gender": "women",
+  "productType": "dress",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000009"
+  },
+  "subcategory": null,
+  "tags": [
+   "satin",
+   "evening"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-evening-satin-dress-navy.svg",
+   "/uploads/test-evening-satin-dress-grey.svg",
+   "/uploads/test-evening-satin-dress-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000014"
+    },
+    "sku": "EVENINGS-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 23,
+    "images": [
+     "/uploads/test-evening-satin-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "EVENINGS-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 25,
+    "images": [
+     "/uploads/test-evening-satin-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "EVENINGS-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 10,
+    "images": [
+     "/uploads/test-evening-satin-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "EVENINGS-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-evening-satin-dress-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "EVENINGS-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 20,
+    "images": [
+     "/uploads/test-evening-satin-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "EVENINGS-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-evening-satin-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "EVENINGS-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 14,
+    "images": [
+     "/uploads/test-evening-satin-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "EVENINGS-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 30,
+    "images": [
+     "/uploads/test-evening-satin-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "EVENINGS-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 11,
+    "images": [
+     "/uploads/test-evening-satin-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "EVENINGS-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 14,
+    "images": [
+     "/uploads/test-evening-satin-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "EVENINGS-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 30,
+    "images": [
+     "/uploads/test-evening-satin-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "EVENINGS-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 26,
+    "images": [
+     "/uploads/test-evening-satin-dress-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-18T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-18T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000015"
+  },
+  "name": "Wrap Midi Dress",
+  "slug": "wrap-midi-dress",
+  "description": "Wrap Midi Dress — test catalog item for the Women Dresses collection. Soft, durable and true to size.",
+  "price": 74.5,
+  "gender": "women",
+  "productType": "dress",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000009"
+  },
+  "subcategory": null,
+  "tags": [
+   "midi"
+  ],
+  "season": "spring",
+  "images": [
+   "/uploads/test-wrap-midi-dress-grey.svg",
+   "/uploads/test-wrap-midi-dress-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000015"
+    },
+    "sku": "WRAPMIDI-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 16,
+    "images": [
+     "/uploads/test-wrap-midi-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "WRAPMIDI-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 19,
+    "images": [
+     "/uploads/test-wrap-midi-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "WRAPMIDI-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 9,
+    "images": [
+     "/uploads/test-wrap-midi-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "WRAPMIDI-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 36,
+    "images": [
+     "/uploads/test-wrap-midi-dress-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "WRAPMIDI-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 39,
+    "images": [
+     "/uploads/test-wrap-midi-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "WRAPMIDI-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 8,
+    "images": [
+     "/uploads/test-wrap-midi-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "WRAPMIDI-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 25,
+    "images": [
+     "/uploads/test-wrap-midi-dress-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "WRAPMIDI-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 34,
+    "images": [
+     "/uploads/test-wrap-midi-dress-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 3.5,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-07-28T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-28T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000016"
+  },
+  "name": "Pleated Skirt",
+  "slug": "pleated-skirt",
+  "description": "Pleated Skirt — test catalog item for the Women Skirts collection. Soft, durable and true to size.",
+  "price": 39,
+  "gender": "women",
+  "productType": "skirt",
+  "brand": {
+   "$oid": "b30000000000000000000002"
+  },
+  "category": {
+   "$oid": "c20000000000000000000011"
+  },
+  "subcategory": null,
+  "tags": [
+   "pleated"
+  ],
+  "season": "spring",
+  "images": [
+   "/uploads/test-pleated-skirt-black.svg",
+   "/uploads/test-pleated-skirt-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000016"
+    },
+    "sku": "PLEATEDS-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 25,
+    "images": [
+     "/uploads/test-pleated-skirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "PLEATEDS-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-pleated-skirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "PLEATEDS-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 10,
+    "images": [
+     "/uploads/test-pleated-skirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "PLEATEDS-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 15,
+    "images": [
+     "/uploads/test-pleated-skirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "PLEATEDS-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 28,
+    "images": [
+     "/uploads/test-pleated-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "PLEATEDS-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 14,
+    "images": [
+     "/uploads/test-pleated-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "PLEATEDS-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 29,
+    "images": [
+     "/uploads/test-pleated-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "PLEATEDS-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 33,
+    "images": [
+     "/uploads/test-pleated-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4.3,
+  "ratingCount": 3,
+  "createdAt": {
+   "$date": "2026-07-26T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-26T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000017"
+  },
+  "name": "Denim Mini Skirt",
+  "slug": "denim-mini-skirt",
+  "description": "Denim Mini Skirt — test catalog item for the Women Skirts collection. Soft, durable and true to size.",
+  "price": 42,
+  "gender": "women",
+  "productType": "skirt",
+  "brand": {
+   "$oid": "b30000000000000000000004"
+  },
+  "category": {
+   "$oid": "c20000000000000000000011"
+  },
+  "subcategory": null,
+  "tags": [
+   "denim"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-denim-mini-skirt-crimson.svg",
+   "/uploads/test-denim-mini-skirt-white.svg",
+   "/uploads/test-denim-mini-skirt-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000017"
+    },
+    "sku": "DENIMMIN-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 32,
+    "images": [
+     "/uploads/test-denim-mini-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "DENIMMIN-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 40,
+    "images": [
+     "/uploads/test-denim-mini-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "DENIMMIN-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-denim-mini-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "DENIMMIN-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 38,
+    "images": [
+     "/uploads/test-denim-mini-skirt-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "DENIMMIN-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 16,
+    "images": [
+     "/uploads/test-denim-mini-skirt-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "DENIMMIN-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 16,
+    "images": [
+     "/uploads/test-denim-mini-skirt-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "DENIMMIN-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 30,
+    "images": [
+     "/uploads/test-denim-mini-skirt-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "DENIMMIN-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 17,
+    "images": [
+     "/uploads/test-denim-mini-skirt-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "DENIMMIN-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 25,
+    "images": [
+     "/uploads/test-denim-mini-skirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "DENIMMIN-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 18,
+    "images": [
+     "/uploads/test-denim-mini-skirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "DENIMMIN-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 39,
+    "images": [
+     "/uploads/test-denim-mini-skirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "DENIMMIN-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-denim-mini-skirt-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-30T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-30T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000018"
+  },
+  "name": "Silk Blouse",
+  "slug": "silk-blouse",
+  "description": "Silk Blouse — test catalog item for the Women Tops collection. Soft, durable and true to size.",
+  "price": 68,
+  "gender": "women",
+  "productType": "shirt",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000010"
+  },
+  "subcategory": null,
+  "tags": [
+   "silk"
+  ],
+  "season": "spring",
+  "images": [
+   "/uploads/test-silk-blouse-white.svg",
+   "/uploads/test-silk-blouse-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000018"
+    },
+    "sku": "SILKBLOU-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 4,
+    "images": [
+     "/uploads/test-silk-blouse-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "SILKBLOU-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 33,
+    "images": [
+     "/uploads/test-silk-blouse-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "SILKBLOU-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 26,
+    "images": [
+     "/uploads/test-silk-blouse-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "SILKBLOU-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 38,
+    "images": [
+     "/uploads/test-silk-blouse-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "SILKBLOU-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 2,
+    "images": [
+     "/uploads/test-silk-blouse-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "SILKBLOU-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-silk-blouse-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "SILKBLOU-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 32,
+    "images": [
+     "/uploads/test-silk-blouse-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "SILKBLOU-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 14,
+    "images": [
+     "/uploads/test-silk-blouse-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-06-14T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-14T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000019"
+  },
+  "name": "Linen Shirt",
+  "slug": "linen-shirt",
+  "description": "Linen Shirt — test catalog item for the Men T-Shirts collection. Soft, durable and true to size.",
+  "price": 46,
+  "gender": "men",
+  "productType": "shirt",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000005"
+  },
+  "subcategory": null,
+  "tags": [
+   "linen"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-linen-shirt-navy.svg",
+   "/uploads/test-linen-shirt-grey.svg",
+   "/uploads/test-linen-shirt-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000019"
+    },
+    "sku": "LINENSHI-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 14,
+    "images": [
+     "/uploads/test-linen-shirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "LINENSHI-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 23,
+    "images": [
+     "/uploads/test-linen-shirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "LINENSHI-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-linen-shirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "LINENSHI-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 20,
+    "images": [
+     "/uploads/test-linen-shirt-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "LINENSHI-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-linen-shirt-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "LINENSHI-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 14,
+    "images": [
+     "/uploads/test-linen-shirt-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "LINENSHI-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 27,
+    "images": [
+     "/uploads/test-linen-shirt-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "LINENSHI-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 20,
+    "images": [
+     "/uploads/test-linen-shirt-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "LINENSHI-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 31,
+    "images": [
+     "/uploads/test-linen-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "LINENSHI-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 11,
+    "images": [
+     "/uploads/test-linen-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "LINENSHI-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 29,
+    "images": [
+     "/uploads/test-linen-shirt-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "LINENSHI-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 13,
+    "images": [
+     "/uploads/test-linen-shirt-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": true,
+  "isActive": true,
+  "ratingAverage": 3,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-06-28T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-28T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000020"
+  },
+  "name": "Knit Sweater",
+  "slug": "knit-sweater",
+  "description": "Knit Sweater — test catalog item for the Women Tops collection. Soft, durable and true to size.",
+  "price": 58,
+  "compareAtPrice": 72,
+  "gender": "women",
+  "productType": "sweater",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000010"
+  },
+  "subcategory": null,
+  "tags": [
+   "wool"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-knit-sweater-grey.svg",
+   "/uploads/test-knit-sweater-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000020"
+    },
+    "sku": "KNITSWEA-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 10,
+    "images": [
+     "/uploads/test-knit-sweater-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "KNITSWEA-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 27,
+    "images": [
+     "/uploads/test-knit-sweater-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "KNITSWEA-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 10,
+    "images": [
+     "/uploads/test-knit-sweater-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "KNITSWEA-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 8,
+    "images": [
+     "/uploads/test-knit-sweater-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "KNITSWEA-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 34,
+    "images": [
+     "/uploads/test-knit-sweater-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "KNITSWEA-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-knit-sweater-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "KNITSWEA-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 29,
+    "images": [
+     "/uploads/test-knit-sweater-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "KNITSWEA-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 16,
+    "images": [
+     "/uploads/test-knit-sweater-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-05T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-05T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000021"
+  },
+  "name": "Chino Shorts",
+  "slug": "chino-shorts",
+  "description": "Chino Shorts — test catalog item for the Men Jeans collection. Soft, durable and true to size.",
+  "price": 34,
+  "gender": "men",
+  "productType": "shorts",
+  "brand": {
+   "$oid": "b30000000000000000000003"
+  },
+  "category": {
+   "$oid": "c20000000000000000000006"
+  },
+  "subcategory": null,
+  "tags": [
+   "shorts"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-chino-shorts-black.svg",
+   "/uploads/test-chino-shorts-crimson.svg",
+   "/uploads/test-chino-shorts-white.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000021"
+    },
+    "sku": "CHINOSHO-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 20,
+    "images": [
+     "/uploads/test-chino-shorts-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "CHINOSHO-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 9,
+    "images": [
+     "/uploads/test-chino-shorts-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "CHINOSHO-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 9,
+    "images": [
+     "/uploads/test-chino-shorts-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "CHINOSHO-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 25,
+    "images": [
+     "/uploads/test-chino-shorts-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "CHINOSHO-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 8,
+    "images": [
+     "/uploads/test-chino-shorts-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "CHINOSHO-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 12,
+    "images": [
+     "/uploads/test-chino-shorts-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "CHINOSHO-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-chino-shorts-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "CHINOSHO-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 23,
+    "images": [
+     "/uploads/test-chino-shorts-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "CHINOSHO-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-chino-shorts-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "CHINOSHO-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 34,
+    "images": [
+     "/uploads/test-chino-shorts-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "CHINOSHO-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-chino-shorts-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "CHINOSHO-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-chino-shorts-white.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 2,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-16T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-16T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000022"
+  },
+  "name": "Running Sneakers",
+  "slug": "running-sneakers",
+  "description": "Running Sneakers — test catalog item for the Women Shoes collection. Soft, durable and true to size.",
+  "price": 94,
+  "compareAtPrice": 120,
+  "gender": "unisex",
+  "productType": "shoes",
+  "brand": {
+   "$oid": "b30000000000000000000005"
+  },
+  "category": {
+   "$oid": "c20000000000000000000012"
+  },
+  "subcategory": null,
+  "tags": [
+   "running",
+   "sport"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-running-sneakers-crimson.svg",
+   "/uploads/test-running-sneakers-white.svg",
+   "/uploads/test-running-sneakers-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000022"
+    },
+    "sku": "RUNNINGS-CRI-XS",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XS",
+    "stock": 12,
+    "images": [
+     "/uploads/test-running-sneakers-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "RUNNINGS-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 19,
+    "images": [
+     "/uploads/test-running-sneakers-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "RUNNINGS-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-running-sneakers-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "RUNNINGS-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 9,
+    "images": [
+     "/uploads/test-running-sneakers-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "RUNNINGS-WHI-XS",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XS",
+    "stock": 20,
+    "images": [
+     "/uploads/test-running-sneakers-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "RUNNINGS-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 40,
+    "images": [
+     "/uploads/test-running-sneakers-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "RUNNINGS-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-running-sneakers-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "RUNNINGS-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 29,
+    "images": [
+     "/uploads/test-running-sneakers-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "RUNNINGS-NAV-XS",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XS",
+    "stock": 23,
+    "images": [
+     "/uploads/test-running-sneakers-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "RUNNINGS-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 36,
+    "images": [
+     "/uploads/test-running-sneakers-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "RUNNINGS-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 16,
+    "images": [
+     "/uploads/test-running-sneakers-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000033"
+    },
+    "sku": "RUNNINGS-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 27,
+    "images": [
+     "/uploads/test-running-sneakers-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-13T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-13T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000023"
+  },
+  "name": "Leather Ankle Boots",
+  "slug": "leather-ankle-boots",
+  "description": "Leather Ankle Boots — test catalog item for the Women Shoes collection. Soft, durable and true to size.",
+  "price": 135,
+  "gender": "women",
+  "productType": "shoes",
+  "brand": {
+   "$oid": "b30000000000000000000005"
+  },
+  "category": {
+   "$oid": "c20000000000000000000012"
+  },
+  "subcategory": null,
+  "tags": [
+   "leather",
+   "boots"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-leather-ankle-boots-white.svg",
+   "/uploads/test-leather-ankle-boots-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000023"
+    },
+    "sku": "LEATHERA-WHI-XS",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XS",
+    "stock": 27,
+    "images": [
+     "/uploads/test-leather-ankle-boots-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "LEATHERA-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-leather-ankle-boots-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "LEATHERA-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 11,
+    "images": [
+     "/uploads/test-leather-ankle-boots-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "LEATHERA-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 35,
+    "images": [
+     "/uploads/test-leather-ankle-boots-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "LEATHERA-NAV-XS",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XS",
+    "stock": 19,
+    "images": [
+     "/uploads/test-leather-ankle-boots-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "LEATHERA-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-leather-ankle-boots-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "LEATHERA-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 24,
+    "images": [
+     "/uploads/test-leather-ankle-boots-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "LEATHERA-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 30,
+    "images": [
+     "/uploads/test-leather-ankle-boots-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 1,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-22T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-22T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000024"
+  },
+  "name": "Canvas Low Tops",
+  "slug": "canvas-low-tops",
+  "description": "Canvas Low Tops — test catalog item for the Women Shoes collection. Soft, durable and true to size.",
+  "price": 49,
+  "gender": "unisex",
+  "productType": "shoes",
+  "brand": {
+   "$oid": "b30000000000000000000005"
+  },
+  "category": {
+   "$oid": "c20000000000000000000012"
+  },
+  "subcategory": null,
+  "tags": [
+   "canvas"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-canvas-low-tops-navy.svg",
+   "/uploads/test-canvas-low-tops-grey.svg",
+   "/uploads/test-canvas-low-tops-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000024"
+    },
+    "sku": "CANVASLO-NAV-XS",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XS",
+    "stock": 23,
+    "images": [
+     "/uploads/test-canvas-low-tops-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "CANVASLO-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 18,
+    "images": [
+     "/uploads/test-canvas-low-tops-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "CANVASLO-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 36,
+    "images": [
+     "/uploads/test-canvas-low-tops-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "CANVASLO-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 14,
+    "images": [
+     "/uploads/test-canvas-low-tops-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "CANVASLO-GRE-XS",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XS",
+    "stock": 13,
+    "images": [
+     "/uploads/test-canvas-low-tops-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "CANVASLO-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 14,
+    "images": [
+     "/uploads/test-canvas-low-tops-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "CANVASLO-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-canvas-low-tops-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "CANVASLO-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 34,
+    "images": [
+     "/uploads/test-canvas-low-tops-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "CANVASLO-BLA-XS",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XS",
+    "stock": 20,
+    "images": [
+     "/uploads/test-canvas-low-tops-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000033"
+    },
+    "sku": "CANVASLO-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 35,
+    "images": [
+     "/uploads/test-canvas-low-tops-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000034"
+    },
+    "sku": "CANVASLO-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 31,
+    "images": [
+     "/uploads/test-canvas-low-tops-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000035"
+    },
+    "sku": "CANVASLO-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 39,
+    "images": [
+     "/uploads/test-canvas-low-tops-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4,
+  "ratingCount": 1,
+  "createdAt": {
+   "$date": "2026-07-29T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-29T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000025"
+  },
+  "name": "Leather Belt",
+  "slug": "leather-belt",
+  "description": "Leather Belt — test catalog item for the Accessories collection. Soft, durable and true to size.",
+  "price": 29,
+  "gender": "men",
+  "productType": "accessory",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000004"
+  },
+  "subcategory": null,
+  "tags": [
+   "belt",
+   "leather"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-leather-belt-grey.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000025"
+    },
+    "sku": "LEATHERB-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 30,
+    "images": [
+     "/uploads/test-leather-belt-grey.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": true,
+  "isActive": true,
+  "ratingAverage": 2.7,
+  "ratingCount": 3,
+  "createdAt": {
+   "$date": "2026-06-27T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-27T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000026"
+  },
+  "name": "Wool Scarf",
+  "slug": "wool-scarf",
+  "description": "Wool Scarf — test catalog item for the Accessories collection. Soft, durable and true to size.",
+  "price": 27,
+  "gender": "unisex",
+  "productType": "accessory",
+  "brand": {
+   "$oid": "b30000000000000000000001"
+  },
+  "category": {
+   "$oid": "c20000000000000000000004"
+  },
+  "subcategory": null,
+  "tags": [
+   "scarf"
+  ],
+  "season": "winter",
+  "images": [
+   "/uploads/test-wool-scarf-black.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000026"
+    },
+    "sku": "WOOLSCAR-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-wool-scarf-black.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 2,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-06-16T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-16T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000027"
+  },
+  "name": "Crossbody Bag",
+  "slug": "crossbody-bag",
+  "description": "Crossbody Bag — test catalog item for the Accessories collection. Soft, durable and true to size.",
+  "price": 85,
+  "compareAtPrice": 99,
+  "gender": "women",
+  "productType": "accessory",
+  "brand": {
+   "$oid": "b30000000000000000000006"
+  },
+  "category": {
+   "$oid": "c20000000000000000000004"
+  },
+  "subcategory": null,
+  "tags": [
+   "bag"
+  ],
+  "season": "all-season",
+  "images": [
+   "/uploads/test-crossbody-bag-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000027"
+    },
+    "sku": "CROSSBOD-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 11,
+    "images": [
+     "/uploads/test-crossbody-bag-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-06-22T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-22T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000028"
+  },
+  "name": "Kids Dino Set",
+  "slug": "kids-dino-set",
+  "description": "Kids Dino Set — test catalog item for the Kids Sets collection. Soft, durable and true to size.",
+  "price": 32,
+  "gender": "kids",
+  "productType": "other",
+  "brand": {
+   "$oid": "b30000000000000000000002"
+  },
+  "category": {
+   "$oid": "c20000000000000000000013"
+  },
+  "subcategory": null,
+  "tags": [
+   "kids",
+   "set"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-kids-dino-set-white.svg",
+   "/uploads/test-kids-dino-set-navy.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000028"
+    },
+    "sku": "KIDSDINO-WHI-S",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "S",
+    "stock": 24,
+    "images": [
+     "/uploads/test-kids-dino-set-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "KIDSDINO-WHI-M",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "M",
+    "stock": 36,
+    "images": [
+     "/uploads/test-kids-dino-set-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "KIDSDINO-WHI-L",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "L",
+    "stock": 12,
+    "images": [
+     "/uploads/test-kids-dino-set-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "KIDSDINO-WHI-XL",
+    "color": {
+     "name": "White",
+     "code": "#ffffff"
+    },
+    "size": "XL",
+    "stock": 39,
+    "images": [
+     "/uploads/test-kids-dino-set-white.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "KIDSDINO-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 40,
+    "images": [
+     "/uploads/test-kids-dino-set-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000033"
+    },
+    "sku": "KIDSDINO-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 39,
+    "images": [
+     "/uploads/test-kids-dino-set-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000034"
+    },
+    "sku": "KIDSDINO-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 14,
+    "images": [
+     "/uploads/test-kids-dino-set-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000035"
+    },
+    "sku": "KIDSDINO-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 35,
+    "images": [
+     "/uploads/test-kids-dino-set-navy.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 4.5,
+  "ratingCount": 2,
+  "createdAt": {
+   "$date": "2026-06-13T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-13T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000029"
+  },
+  "name": "Kids Denim Jacket",
+  "slug": "kids-denim-jacket",
+  "description": "Kids Denim Jacket — test catalog item for the Kids Sets collection. Soft, durable and true to size.",
+  "price": 44,
+  "gender": "kids",
+  "productType": "jacket",
+  "brand": {
+   "$oid": "b30000000000000000000004"
+  },
+  "category": {
+   "$oid": "c20000000000000000000013"
+  },
+  "subcategory": null,
+  "tags": [
+   "kids",
+   "denim"
+  ],
+  "season": "autumn",
+  "images": [
+   "/uploads/test-kids-denim-jacket-navy.svg",
+   "/uploads/test-kids-denim-jacket-grey.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000029"
+    },
+    "sku": "KIDSDENI-NAV-S",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-kids-denim-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "KIDSDENI-NAV-M",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "M",
+    "stock": 11,
+    "images": [
+     "/uploads/test-kids-denim-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "KIDSDENI-NAV-L",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "L",
+    "stock": 37,
+    "images": [
+     "/uploads/test-kids-denim-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "KIDSDENI-NAV-XL",
+    "color": {
+     "name": "Navy",
+     "code": "#14213d"
+    },
+    "size": "XL",
+    "stock": 24,
+    "images": [
+     "/uploads/test-kids-denim-jacket-navy.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000033"
+    },
+    "sku": "KIDSDENI-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 36,
+    "images": [
+     "/uploads/test-kids-denim-jacket-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000034"
+    },
+    "sku": "KIDSDENI-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 21,
+    "images": [
+     "/uploads/test-kids-denim-jacket-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000035"
+    },
+    "sku": "KIDSDENI-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 21,
+    "images": [
+     "/uploads/test-kids-denim-jacket-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000036"
+    },
+    "sku": "KIDSDENI-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 23,
+    "images": [
+     "/uploads/test-kids-denim-jacket-grey.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": true,
+  "ratingAverage": 3.5,
+  "ratingCount": 4,
+  "createdAt": {
+   "$date": "2026-06-30T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-30T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "d40000000000000000000030"
+  },
+  "name": "Discontinued Retro Tee",
+  "slug": "discontinued-retro-tee",
+  "description": "Discontinued Retro Tee — test catalog item for the Men T-Shirts collection. Soft, durable and true to size.",
+  "price": 15,
+  "gender": "men",
+  "productType": "t-shirt",
+  "brand": {
+   "$oid": "b30000000000000000000003"
+  },
+  "category": {
+   "$oid": "c20000000000000000000005"
+  },
+  "subcategory": null,
+  "tags": [
+   "retro"
+  ],
+  "season": "summer",
+  "images": [
+   "/uploads/test-discontinued-retro-tee-grey.svg",
+   "/uploads/test-discontinued-retro-tee-black.svg",
+   "/uploads/test-discontinued-retro-tee-crimson.svg"
+  ],
+  "variants": [
+   {
+    "_id": {
+     "$oid": "d90000000000000000000030"
+    },
+    "sku": "DISCONTI-GRE-S",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "S",
+    "stock": 27,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000031"
+    },
+    "sku": "DISCONTI-GRE-M",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "M",
+    "stock": 36,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000032"
+    },
+    "sku": "DISCONTI-GRE-L",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "L",
+    "stock": 31,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000033"
+    },
+    "sku": "DISCONTI-GRE-XL",
+    "color": {
+     "name": "Grey",
+     "code": "#9ca3af"
+    },
+    "size": "XL",
+    "stock": 18,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-grey.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000034"
+    },
+    "sku": "DISCONTI-BLA-S",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "S",
+    "stock": 38,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000035"
+    },
+    "sku": "DISCONTI-BLA-M",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "M",
+    "stock": 22,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000036"
+    },
+    "sku": "DISCONTI-BLA-L",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "L",
+    "stock": 18,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000037"
+    },
+    "sku": "DISCONTI-BLA-XL",
+    "color": {
+     "name": "Black",
+     "code": "#000000"
+    },
+    "size": "XL",
+    "stock": 40,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-black.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000038"
+    },
+    "sku": "DISCONTI-CRI-S",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "S",
+    "stock": 15,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000039"
+    },
+    "sku": "DISCONTI-CRI-M",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "M",
+    "stock": 40,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000040"
+    },
+    "sku": "DISCONTI-CRI-L",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "L",
+    "stock": 18,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   },
+   {
+    "_id": {
+     "$oid": "d90000000000000000000041"
+    },
+    "sku": "DISCONTI-CRI-XL",
+    "color": {
+     "name": "Crimson",
+     "code": "#bc0202"
+    },
+    "size": "XL",
+    "stock": 23,
+    "images": [
+     "/uploads/test-discontinued-retro-tee-crimson.svg"
+    ],
+    "isAvailable": true
+   }
+  ],
+  "featured": false,
+  "isActive": false,
+  "ratingAverage": 0,
+  "ratingCount": 0,
+  "createdAt": {
+   "$date": "2026-07-18T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-18T12:00:00.000Z"
+  },
+  "__v": 0
+ }
+]

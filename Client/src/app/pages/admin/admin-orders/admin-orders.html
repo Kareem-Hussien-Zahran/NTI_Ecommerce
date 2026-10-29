@@ -1,0 +1,58 @@
+<div class="row between wrap">
+  <h1 class="page-title">Orders</h1>
+  <mat-form-field subscriptSizing="dynamic" class="f"
+    ><mat-label>Status</mat-label>
+    <mat-select [value]="filter()" (selectionChange)="filter.set($event.value); load(1)"
+      ><mat-option value="">All</mat-option>
+      @for (s of statuses; track s) {
+        <mat-option [value]="s">{{ s }}</mat-option>
+      }
+    </mat-select></mat-form-field
+  >
+</div>
+<div class="table-wrap">
+  <table mat-table [dataSource]="data()?.items ?? []">
+    <ng-container matColumnDef="no"
+      ><th mat-header-cell *matHeaderCellDef>Order</th>
+      <td mat-cell *matCellDef="let o">
+        <b>{{ o.orderNumber }}</b>
+        <div class="muted xs">{{ o.createdAt | date: 'short' }}</div>
+      </td></ng-container
+    >
+    <ng-container matColumnDef="customer"
+      ><th mat-header-cell *matHeaderCellDef>Customer</th>
+      <td mat-cell *matCellDef="let o">{{ cust(o) }}</td></ng-container
+    >
+    <ng-container matColumnDef="total"
+      ><th mat-header-cell *matHeaderCellDef>Total</th>
+      <td mat-cell *matCellDef="let o">{{ o.total | currency }}</td></ng-container
+    >
+    <ng-container matColumnDef="status"
+      ><th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let o">
+        <mat-form-field subscriptSizing="dynamic" class="sel"
+          ><mat-select
+            [value]="o.status"
+            (selectionChange)="setStatus(o, $event.value)"
+            [disabled]="o.status === 'cancelled' || o.status === 'delivered'"
+          >
+            @for (s of statuses; track s) {
+              <mat-option [value]="s">{{ s }}</mat-option>
+            }
+          </mat-select></mat-form-field
+        >
+      </td></ng-container
+    >
+    <tr mat-header-row *matHeaderRowDef="cols"></tr>
+    <tr mat-row *matRowDef="let r; columns: cols"></tr>
+  </table>
+</div>
+@if (data(); as d) {
+  <mat-paginator
+    [length]="d.meta.total"
+    [pageSize]="d.meta.limit"
+    [pageIndex]="d.meta.page - 1"
+    [hidePageSize]="true"
+    (page)="load($event.pageIndex + 1)"
+  />
+}

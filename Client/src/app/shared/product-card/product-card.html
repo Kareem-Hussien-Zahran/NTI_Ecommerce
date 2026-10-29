@@ -1,0 +1,32 @@
+<article>
+  <a [routerLink]="['/product', p().slug]" class="img">
+    @if (p().images[0]; as src) {
+      <img [src]="src" [alt]="p().name" loading="lazy" />
+    } @else {
+      <div class="ph"><mat-icon>image</mat-icon></div>
+    }
+    @if (soldOut()) {
+      <span class="tag out">Sold out</span>
+    } @else if (p().compareAtPrice) {
+      <span class="tag">Sale</span>
+    }
+  </a>
+  <button class="heart" (click)="wish.toggle(p()._id)" [attr.aria-label]="'Toggle wishlist'">
+    <mat-icon>{{ wish.has(p()._id) ? 'favorite' : 'favorite_border' }}</mat-icon>
+  </button>
+  <div class="info">
+    <span class="brand">{{ brand() }}</span>
+    <a [routerLink]="['/product', p().slug]" class="name">{{ p().name }}</a>
+    <div class="row between">
+      <span class="price"
+        >{{ p().price | currency }}
+        @if (p().compareAtPrice) {
+          <s>{{ p().compareAtPrice | currency }}</s>
+        }
+      </span>
+      @if (p().ratingCount) {
+        <span class="rate"><mat-icon>star</mat-icon>{{ p().ratingAverage }}</span>
+      }
+    </div>
+  </div>
+</article>

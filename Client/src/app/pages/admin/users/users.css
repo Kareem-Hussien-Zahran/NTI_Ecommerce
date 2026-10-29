@@ -1,0 +1,15 @@
+.gap {
+  margin-top: 16px;
+}
+.sel {
+  width: 140px;
+}
+.xs {
+  font-size: 0.8rem;
+}
+.right {
+  text-align: right;
+}
+td {
+  padding: 8px 16px;
+}

@@ -1,0 +1,91 @@
+<div class="container page">
+  <div class="row between wrap head">
+    <h1 class="page-title">{{ form.value.q ? 'Results for “' + form.value.q + '”' : 'Shop' }}</h1>
+    <span class="muted">{{ data()?.meta?.total ?? 0 }} products</span>
+  </div>
+
+  <form [formGroup]="form" class="filters card">
+    <mat-form-field subscriptSizing="dynamic"
+      ><mat-label>Category</mat-label>
+      <mat-select formControlName="category"
+        ><mat-option value="">All</mat-option>
+        @for (c of categories(); track c._id) {
+          <mat-option [value]="c.slug">{{ c.name }}</mat-option>
+        }
+      </mat-select></mat-form-field
+    >
+    <mat-form-field subscriptSizing="dynamic"
+      ><mat-label>Brand</mat-label>
+      <mat-select formControlName="brand"
+        ><mat-option value="">All</mat-option>
+        @for (b of brands(); track b._id) {
+          <mat-option [value]="b.slug">{{ b.name }}</mat-option>
+        }
+      </mat-select></mat-form-field
+    >
+    <mat-form-field subscriptSizing="dynamic"
+      ><mat-label>For</mat-label>
+      <mat-select formControlName="gender"
+        ><mat-option value="">Everyone</mat-option>
+        @for (g of genders; track g) {
+          <mat-option [value]="g">{{ g }}</mat-option>
+        }
+      </mat-select></mat-form-field
+    >
+    <mat-form-field subscriptSizing="dynamic"
+      ><mat-label>Size</mat-label>
+      <mat-select formControlName="size"
+        ><mat-option value="">Any</mat-option>
+        @for (s of sizes; track s) {
+          <mat-option [value]="s">{{ s }}</mat-option>
+        }
+      </mat-select></mat-form-field
+    >
+    <mat-form-field subscriptSizing="dynamic" class="narrow"
+      ><mat-label>Min $</mat-label><input matInput type="number" min="0" formControlName="minPrice"
+    /></mat-form-field>
+    <mat-form-field subscriptSizing="dynamic" class="narrow"
+      ><mat-label>Max $</mat-label><input matInput type="number" min="0" formControlName="maxPrice"
+    /></mat-form-field>
+    <mat-form-field subscriptSizing="dynamic"
+      ><mat-label>Sort by</mat-label>
+      <mat-select formControlName="sort">
+        <mat-option value="newest">Newest</mat-option
+        ><mat-option value="price_asc">Price: low to high</mat-option>
+        <mat-option value="price_desc">Price: high to low</mat-option
+        ><mat-option value="rating">Top rated</mat-option><mat-option value="name">Name</mat-option>
+      </mat-select></mat-form-field
+    >
+    <mat-slide-toggle formControlName="inStock">In stock</mat-slide-toggle>
+    <button mat-button type="button" (click)="reset()">
+      <mat-icon>restart_alt</mat-icon>Reset
+    </button>
+  </form>
+
+  @if (loading()) {
+    <mat-progress-bar mode="indeterminate" />
+  }
+
+  @if (data(); as d) {
+    @if (d.items.length) {
+      <div class="grid-products">
+        @for (p of d.items; track p._id) {
+          <app-product-card [p]="p" />
+        }
+      </div>
+      <mat-paginator
+        [length]="d.meta.total"
+        [pageSize]="d.meta.limit"
+        [pageIndex]="d.meta.page - 1"
+        [hidePageSize]="true"
+        (page)="go($event)"
+      />
+    } @else {
+      <div class="empty">
+        <mat-icon>search_off</mat-icon>
+        <p>No products match your filters.</p>
+        <button mat-stroked-button (click)="reset()">Clear filters</button>
+      </div>
+    }
+  }
+</div>

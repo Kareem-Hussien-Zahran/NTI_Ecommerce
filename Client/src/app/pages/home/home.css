@@ -1,0 +1,92 @@
+.hero {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 0, 0, 0.32), transparent 45%),
+    linear-gradient(135deg, #000 0%, #1a0000 55%, var(--crimson-dark) 130%);
+  color: var(--white);
+}
+.hero-in {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  max-width: 14ch;
+  line-height: 1.05;
+  margin: 12px 0 16px;
+  font-weight: 800;
+}
+.hero p {
+  max-width: 46ch;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--red);
+}
+.hero .mat-mdc-outlined-button {
+  --mat-button-outlined-label-text-color: var(--white);
+  --mat-button-outlined-outline-color: rgba(255, 255, 255, 0.5);
+}
+.perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.perks div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: #fff;
+  border: 1px solid var(--app-border);
+  border-radius: var(--app-radius);
+  padding: 18px 20px;
+}
+.perks mat-icon {
+  color: var(--crimson);
+  margin-bottom: 6px;
+}
+.chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.chip {
+  background: #fff;
+  border: 1px solid var(--app-border);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 500;
+}
+.chip:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+.head {
+  margin: 24px 0 20px;
+}
+.head h2 {
+  font-size: 1.6rem;
+}
+.more {
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom: 2px solid var(--crimson);
+}
+@media (max-width: 700px) {
+  .perks {
+    grid-template-columns: 1fr;
+  }
+  .hero-in {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}

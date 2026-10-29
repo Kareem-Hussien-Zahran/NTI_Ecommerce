@@ -1,0 +1,16 @@
+<div class="container page">
+  <h1 class="page-title">Wishlist</h1>
+  @if (items().length) {
+    <div class="grid-products">
+      @for (p of items(); track p._id) {
+        <app-product-card [p]="p" />
+      }
+    </div>
+  } @else if (loaded()) {
+    <div class="empty">
+      <mat-icon>favorite_border</mat-icon>
+      <p>Nothing saved yet.</p>
+      <a mat-flat-button routerLink="/shop">Browse products</a>
+    </div>
+  }
+</div>

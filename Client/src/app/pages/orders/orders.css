@@ -1,0 +1,32 @@
+.order {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+}
+.order:hover {
+  border-color: var(--mat-sys-primary);
+}
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+.imgs {
+  display: flex;
+}
+.imgs img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+.imgs img:first-child {
+  margin-left: 0;
+}
+@media (max-width: 640px) {
+  .imgs {
+    display: none;
+  }
+}

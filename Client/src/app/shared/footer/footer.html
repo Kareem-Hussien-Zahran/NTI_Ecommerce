@@ -1,0 +1,21 @@
+<footer>
+  <div class="container cols">
+    <div>
+      <strong class="brand">Northwind</strong>
+      <p class="muted">Everyday essentials, made to last.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a routerLink="/shop" [queryParams]="{ gender: 'women' }">Women</a>
+      <a routerLink="/shop" [queryParams]="{ gender: 'men' }">Men</a>
+      <a routerLink="/shop" [queryParams]="{ featured: 'true' }">Featured</a>
+    </div>
+    <div>
+      <h4>Account</h4>
+      <a routerLink="/profile">My account</a>
+      <a routerLink="/orders">Orders</a>
+      <a routerLink="/wishlist">Wishlist</a>
+    </div>
+  </div>
+  <div class="container copy muted">© {{ year }} Northwind Store. All rights reserved.</div>
+</footer>

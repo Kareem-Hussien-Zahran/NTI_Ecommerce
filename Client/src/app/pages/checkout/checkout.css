@@ -1,0 +1,20 @@
+.sum {
+  position: sticky;
+  top: 92px;
+}
+.total {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.big {
+  height: 48px;
+}
+.sm {
+  font-size: 0.9rem;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--app-border);
+  width: 100%;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+.narrow-page {
+  max-width: 460px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+h1 {
+  font-size: 1.8rem;
+}
+.big {
+  height: 48px;
+}
+.center {
+  text-align: center;
+  margin: 0;
+}
+.link {
+  color: var(--mat-sys-primary);
+  font-weight: 600;
+}

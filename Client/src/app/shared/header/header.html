@@ -1,0 +1,53 @@
+<header>
+  <div class="container bar">
+    <a routerLink="/" class="brand"><mat-icon>checkroom</mat-icon><span>Northwind</span></a>
+
+    <nav class="links">
+      <a routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        >Shop</a
+      >
+      <a routerLink="/shop" [queryParams]="{ gender: 'women' }">Women</a>
+      <a routerLink="/shop" [queryParams]="{ gender: 'men' }">Men</a>
+    </nav>
+
+    <form class="search" (submit)="$event.preventDefault(); search()">
+      <mat-icon>search</mat-icon>
+      <input
+        type="search"
+        placeholder="Search products…"
+        [formControl]="q"
+        aria-label="Search products"
+      />
+    </form>
+
+    <div class="actions">
+      @if (auth.isLoggedIn()) {
+        <a mat-icon-button routerLink="/wishlist" aria-label="Wishlist"
+          ><mat-icon>favorite_border</mat-icon></a
+        >
+      }
+      <a mat-icon-button routerLink="/cart" aria-label="Cart">
+        <mat-icon [matBadge]="cart.count() || null">shopping_bag</mat-icon>
+      </a>
+      @if (auth.isLoggedIn()) {
+        <button mat-button [matMenuTriggerFor]="menu" class="user">
+          <mat-icon>account_circle</mat-icon><span class="name">{{ auth.user()?.firstName }}</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item routerLink="/profile"><mat-icon>person</mat-icon>My account</a>
+          <a mat-menu-item routerLink="/orders"><mat-icon>receipt_long</mat-icon>Orders</a>
+          <a mat-menu-item routerLink="/wishlist"><mat-icon>favorite</mat-icon>Wishlist</a>
+          @if (auth.isAdmin()) {
+            <mat-divider />
+            <a mat-menu-item routerLink="/admin"><mat-icon>space_dashboard</mat-icon>Admin</a>
+          }
+          <mat-divider />
+          <button mat-menu-item (click)="logout()"><mat-icon>logout</mat-icon>Sign out</button>
+        </mat-menu>
+      } @else {
+        <a mat-button routerLink="/login">Sign in</a>
+        <a mat-flat-button routerLink="/register" class="join">Join</a>
+      }
+    </div>
+  </div>
+</header>

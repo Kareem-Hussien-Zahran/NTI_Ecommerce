@@ -1,0 +1,60 @@
+<section class="hero">
+  <div class="container hero-in">
+    <div>
+      <span class="eyebrow">New season</span>
+      <h1>Clothing for every day, made to last.</h1>
+      <p>Thoughtfully designed essentials in quality fabrics. Free shipping on orders over $100.</p>
+      <div class="row wrap">
+        <a mat-flat-button routerLink="/shop">Shop now</a>
+        <a mat-stroked-button routerLink="/shop" [queryParams]="{ featured: 'true' }">Featured</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container page">
+  <div class="perks">
+    <div>
+      <mat-icon>local_shipping</mat-icon><b>Free shipping</b
+      ><span class="muted">On orders over $100</span>
+    </div>
+    <div>
+      <mat-icon>verified_user</mat-icon><b>Secure checkout</b
+      ><span class="muted">Protected payments</span>
+    </div>
+    <div>
+      <mat-icon>autorenew</mat-icon><b>Easy returns</b><span class="muted">30-day policy</span>
+    </div>
+  </div>
+
+  @if (categories().length) {
+    <div class="chips">
+      @for (c of categories(); track c._id) {
+        <a class="chip" routerLink="/shop" [queryParams]="{ category: c.slug }">{{ c.name }}</a>
+      }
+    </div>
+  }
+
+  <div class="row between head">
+    <h2>Featured</h2>
+    <a routerLink="/shop" [queryParams]="{ featured: 'true' }" class="more">View all →</a>
+  </div>
+  @if (loading()) {
+    <div class="empty"><mat-spinner diameter="36" style="margin: auto" /></div>
+  }
+  <div class="grid-products">
+    @for (p of featured(); track p._id) {
+      <app-product-card [p]="p" />
+    }
+  </div>
+
+  <div class="row between head">
+    <h2>New arrivals</h2>
+    <a routerLink="/shop" class="more">Shop all →</a>
+  </div>
+  <div class="grid-products">
+    @for (p of latest(); track p._id) {
+      <app-product-card [p]="p" />
+    }
+  </div>
+</div>

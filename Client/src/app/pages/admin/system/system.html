@@ -1,0 +1,270 @@
+<div class="row between wrap">
+  <h1 class="page-title">System &amp; logs</h1>
+  <button mat-stroked-button (click)="refresh()"><mat-icon>refresh</mat-icon>Refresh</button>
+</div>
+
+<mat-tab-group animationDuration="0ms" class="tabs">
+  <mat-tab label="Overview">
+    @if (info(); as i) {
+      <div class="kpis">
+        <div class="card kpi">
+          <span class="muted">API</span
+          ><b [class.good]="i.api.status === 'ok'">{{ i.api.status }}</b>
+          <span class="muted xs"
+            >up {{ uptime(i.api.uptimeSeconds) }} · {{ i.api.node }} · {{ i.api.env }}</span
+          >
+        </div>
+        <div class="card kpi">
+          <span class="muted">Database</span
+          ><b [class.good]="i.db.status === 'ok'" [class.bad]="i.db.status !== 'ok'">{{
+            i.db.status
+          }}</b>
+          <span class="muted xs">{{ i.db.name }}</span>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Memory (RSS)</span><b>{{ i.memory.rssMb | number: '1.0-0' }} MB</b>
+          <span class="muted xs"
+            >heap {{ i.memory.heapUsedMb | number: '1.0-0' }} /
+            {{ i.memory.heapTotalMb | number: '1.0-0' }} MB</span
+          >
+        </div>
+        <div class="card kpi">
+          <span class="muted">Backups</span
+          ><b
+            [class.good]="i.backup.state === 'ok'"
+            [class.warn]="i.backup.state === 'stale' || i.backup.state === 'none'"
+            >{{ i.backup.state.replace('_', ' ') }}</b
+          >
+          <span class="muted xs">every {{ i.backup.intervalHours ?? '—' }} h</span>
+        </div>
+      </div>
+
+      <div class="card section">
+        <div class="row between wrap">
+          <h3>Cache</h3>
+          <button mat-stroked-button (click)="clearCache()">
+            <mat-icon>delete_sweep</mat-icon>Clear cache
+          </button>
+        </div>
+        <div class="stats">
+          <div>
+            <span class="muted">Status</span><b>{{ i.cache.enabled ? 'enabled' : 'disabled' }}</b>
+          </div>
+          <div>
+            <span class="muted">Entries</span
+            ><b>{{ i.cache.entries }} / {{ i.cache.maxEntries }}</b>
+          </div>
+          <div>
+            <span class="muted">Hit rate</span><b>{{ i.cache.hitRate | percent: '1.0-0' }}</b>
+          </div>
+          <div>
+            <span class="muted">Hits / misses</span><b>{{ i.cache.hits }} / {{ i.cache.misses }}</b>
+          </div>
+          <div>
+            <span class="muted">TTL</span><b>{{ i.cache.ttlSeconds }} s</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h3>Backups</h3>
+        @if (!i.backup.configured) {
+          <p class="muted">
+            Not configured. Set <code>BACKUP_DIR</code> on the API (docker compose mounts it
+            read-only at <code>/backups</code>).
+          </p>
+        } @else if (i.backup.state === 'unreachable') {
+          <p class="bad">Backup folder {{ i.backup.dir }} cannot be read.</p>
+        } @else {
+          <p>
+            Latest database dump:
+            @if (i.backup.latestDb; as b) {
+              <b>{{ b.modifiedAt | date: 'medium' }}</b> ({{ kb(b.bytes) }})
+            } @else {
+              <b class="warn">none yet</b>
+            }
+          </p>
+          <table mat-table [dataSource]="i.backup.files ?? []" class="t">
+            <ng-container matColumnDef="name"
+              ><th mat-header-cell *matHeaderCellDef>File</th>
+              <td mat-cell *matCellDef="let f">{{ f.name }}</td></ng-container
+            >
+            <ng-container matColumnDef="kind"
+              ><th mat-header-cell *matHeaderCellDef>Type</th>
+              <td mat-cell *matCellDef="let f">{{ f.kind }}</td></ng-container
+            >
+            <ng-container matColumnDef="size"
+              ><th mat-header-cell *matHeaderCellDef>Size</th>
+              <td mat-cell *matCellDef="let f">{{ kb(f.bytes) }}</td></ng-container
+            >
+            <ng-container matColumnDef="at"
+              ><th mat-header-cell *matHeaderCellDef>Created</th>
+              <td mat-cell *matCellDef="let f">
+                {{ f.modifiedAt | date: 'medium' }}
+              </td></ng-container
+            >
+            <tr mat-header-row *matHeaderRowDef="['name', 'kind', 'size', 'at']"></tr>
+            <tr mat-row *matRowDef="let r; columns: ['name', 'kind', 'size', 'at']"></tr>
+          </table>
+        }
+      </div>
+
+      <div class="card section">
+        <h3>Logging</h3>
+        <p class="muted">
+          Level <b>{{ i.logging.level }}</b> · format <b>{{ i.logging.format }}</b> · audit trail
+          kept <b>{{ i.logging.dbRetentionDays }}</b> days
+          @if (i.logging.files.enabled) {
+            · files in <code>{{ i.logging.files.dir }}</code> kept
+            {{ i.logging.files.retentionDays }} days
+          } @else {
+            · file logging off (set <code>LOG_DIR</code>)
+          }
+        </p>
+      </div>
+
+      <div class="card section">
+        <h3>Collections</h3>
+        <div class="stats">
+          @for (c of i.db.collections | keyvalue; track c.key) {
+            <div>
+              <span class="muted">{{ c.key }}</span
+              ><b>{{ c.value }}</b>
+            </div>
+          }
+        </div>
+      </div>
+    } @else {
+      <p class="muted pad">Loading…</p>
+    }
+  </mat-tab>
+
+  <mat-tab label="Audit log">
+    @if (logs(); as l) {
+      <div class="kpis small">
+        <div class="card kpi">
+          <span class="muted">Audit · 24h</span><b>{{ l.summary.last24h.audit }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Security · 24h</span
+          ><b [class.warn]="l.summary.last24h.security > 0">{{ l.summary.last24h.security }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Errors · 24h</span
+          ><b [class.bad]="l.summary.last24h.error > 0">{{ l.summary.last24h.error }}</b>
+        </div>
+      </div>
+    }
+    <form class="card filters" [formGroup]="form" (ngSubmit)="apply()">
+      <mat-form-field subscriptSizing="dynamic">
+        <mat-label>Type</mat-label>
+        <mat-select formControlName="type">
+          <mat-option value="">All</mat-option><mat-option value="audit">Audit</mat-option>
+          <mat-option value="security">Security</mat-option
+          ><mat-option value="error">Error</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field subscriptSizing="dynamic" class="grow">
+        <mat-label>Search</mat-label>
+        <input matInput formControlName="q" placeholder="action, email, target, IP, request id" />
+      </mat-form-field>
+      <mat-form-field subscriptSizing="dynamic"
+        ><mat-label>From</mat-label><input matInput type="date" formControlName="from"
+      /></mat-form-field>
+      <mat-form-field subscriptSizing="dynamic"
+        ><mat-label>To</mat-label><input matInput type="date" formControlName="to"
+      /></mat-form-field>
+      <button mat-flat-button>Apply</button>
+      <button mat-stroked-button type="button" (click)="csv()">
+        <mat-icon>download</mat-icon>CSV
+      </button>
+    </form>
+
+    @if (logs(); as l) {
+      <div class="card tablewrap">
+        <table mat-table [dataSource]="l.items" class="t logs">
+          <ng-container matColumnDef="time"
+            ><th mat-header-cell *matHeaderCellDef>Time</th>
+            <td mat-cell *matCellDef="let r">
+              {{ r.createdAt | date: 'MMM d, HH:mm:ss' }}
+            </td></ng-container
+          >
+          <ng-container matColumnDef="type"
+            ><th mat-header-cell *matHeaderCellDef>Type</th>
+            <td mat-cell *matCellDef="let r">
+              <span class="tag" [class]="r.type">{{ r.type }}</span>
+            </td></ng-container
+          >
+          <ng-container matColumnDef="action"
+            ><th mat-header-cell *matHeaderCellDef>Action</th>
+            <td mat-cell *matCellDef="let r">
+              <code>{{ r.action }}</code>
+            </td></ng-container
+          >
+          <ng-container matColumnDef="actor"
+            ><th mat-header-cell *matHeaderCellDef>Actor</th>
+            <td mat-cell *matCellDef="let r">{{ r.actor?.email ?? '—' }}</td></ng-container
+          >
+          <ng-container matColumnDef="target"
+            ><th mat-header-cell *matHeaderCellDef>Target</th>
+            <td mat-cell *matCellDef="let r">
+              {{ r.target?.label ?? r.message ?? '—' }}
+            </td></ng-container
+          >
+          <ng-container matColumnDef="ip"
+            ><th mat-header-cell *matHeaderCellDef>IP</th>
+            <td mat-cell *matCellDef="let r">{{ r.ip ?? '—' }}</td></ng-container
+          >
+          <tr mat-header-row *matHeaderRowDef="cols"></tr>
+          <tr mat-row *matRowDef="let r; columns: cols" class="clickable" (click)="toggle(r)"></tr>
+        </table>
+        @if (!l.items.length) {
+          <p class="muted pad">No entries match these filters.</p>
+        }
+        @if (expanded(); as id) {
+          @for (r of l.items; track r._id) {
+            @if (r._id === id) {
+              <pre class="detail">{{
+                json({
+                  requestId: r.requestId,
+                  message: r.message,
+                  actor: r.actor,
+                  target: r.target,
+                  meta: r.meta,
+                })
+              }}</pre>
+            }
+          }
+        }
+        <mat-paginator
+          [length]="l.meta.total"
+          [pageSize]="l.meta.limit"
+          [pageIndex]="l.meta.page - 1"
+          [hidePageSize]="true"
+          (page)="onPage($event)"
+        />
+      </div>
+    }
+  </mat-tab>
+
+  <mat-tab label="Errors">
+    @if (errors().length) {
+      <div class="card tablewrap">
+        @for (e of errors(); track e._id) {
+          <div class="err">
+            <div class="row between wrap">
+              <b>{{ e.action }}</b
+              ><span class="muted xs">{{ e.createdAt | date: 'medium' }} · {{ e.requestId }}</span>
+            </div>
+            <p>{{ e.message }}</p>
+            @if (e.meta) {
+              <pre class="detail">{{ json(e.meta) }}</pre>
+            }
+          </div>
+        }
+      </div>
+    } @else {
+      <p class="muted pad">No server errors recorded. 🎉</p>
+    }
+  </mat-tab>
+</mat-tab-group>

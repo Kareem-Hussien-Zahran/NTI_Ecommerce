@@ -1,0 +1,173 @@
+<div class="container page">
+  @if (loading()) {
+    <div class="empty"><mat-spinner diameter="40" style="margin: auto" /></div>
+  } @else if (!p()) {
+    <div class="empty">
+      <mat-icon>error_outline</mat-icon>
+      <p>Product not found.</p>
+      <a mat-stroked-button routerLink="/shop">Back to shop</a>
+    </div>
+  } @else {
+    @let prod = p()!;
+    <div class="detail">
+      <div class="gallery">
+        <div class="main">
+          @if (images()[imgIndex()]; as src) {
+            <img [src]="src" [alt]="prod.name" />
+          }
+        </div>
+        @if (images().length > 1) {
+          <div class="thumbs">
+            @for (src of images(); track src; let i = $index) {
+              <button [class.on]="i === imgIndex()" (click)="imgIndex.set(i)">
+                <img [src]="src" alt="" />
+              </button>
+            }
+          </div>
+        }
+      </div>
+
+      <div class="stack info">
+        <span class="muted up">{{ brand() }} · {{ category() }}</span>
+        <h1>{{ prod.name }}</h1>
+        <div class="row">
+          <span class="stars">
+            @for (s of [1, 2, 3, 4, 5]; track s) {
+              <mat-icon>{{
+                s <= Math.round(prod.ratingAverage) ? 'star' : 'star_border'
+              }}</mat-icon>
+            }
+          </span>
+          <span class="muted"
+            >{{ prod.ratingCount }} review{{ prod.ratingCount === 1 ? '' : 's' }}</span
+          >
+        </div>
+        <div class="big price">
+          {{ price() | currency }}
+          @if (prod.compareAtPrice) {
+            <s>{{ prod.compareAtPrice | currency }}</s>
+          }
+        </div>
+        <p class="muted desc">{{ prod.description }}</p>
+
+        @if (colors().length) {
+          <div>
+            <label class="lbl"
+              >Color: <b>{{ color() }}</b></label
+            >
+            <div class="row wrap">
+              @for (c of colors(); track c.name) {
+                <button
+                  class="swatch"
+                  [class.on]="c.name === color()"
+                  [style.background]="c.code || '#ccc'"
+                  [title]="c.name"
+                  (click)="pickColor(c.name)"
+                  [attr.aria-label]="c.name"
+                ></button>
+              }
+            </div>
+          </div>
+        }
+        <div>
+          <label class="lbl">Size</label>
+          <mat-button-toggle-group
+            [value]="size()"
+            (change)="size.set($event.value)"
+            hideSingleSelectionIndicator
+          >
+            @for (s of sizes(); track s.size) {
+              <mat-button-toggle [value]="s.size" [disabled]="s.stock < 1 || !s.isAvailable">{{
+                s.size
+              }}</mat-button-toggle>
+            }
+          </mat-button-toggle-group>
+        </div>
+
+        <div class="row wrap buy">
+          <div class="qty">
+            <button mat-icon-button (click)="qty.set(Math.max(1, qty() - 1))" aria-label="Less">
+              <mat-icon>remove</mat-icon></button
+            ><span>{{ qty() }}</span>
+            <button
+              mat-icon-button
+              (click)="qty.set(qty() + 1)"
+              [disabled]="!variant() || qty() >= variant()!.stock"
+              aria-label="More"
+            >
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+          <button
+            mat-flat-button
+            class="add"
+            [disabled]="!variant() || variant()!.stock < 1"
+            (click)="add()"
+          >
+            <mat-icon>shopping_bag</mat-icon>
+            {{
+              variant() ? (variant()!.stock < 1 ? 'Out of stock' : 'Add to cart') : 'Select a size'
+            }}
+          </button>
+          <button mat-stroked-button (click)="wish.toggle(prod._id)">
+            <mat-icon>{{ wish.has(prod._id) ? 'favorite' : 'favorite_border' }}</mat-icon>
+          </button>
+        </div>
+        @if (variant() && variant()!.stock > 0 && variant()!.stock <= 5) {
+          <span class="low">Only {{ variant()!.stock }} left!</span>
+        }
+      </div>
+    </div>
+
+    <section class="reviews">
+      <h2>Reviews</h2>
+      <div class="layout-2">
+        <div class="stack">
+          @for (r of reviews(); track r._id) {
+            <div class="card rev">
+              <div class="row between">
+                <b>{{ r.user.firstName }} {{ r.user.lastName.charAt(0) }}.</b
+                ><span class="muted">{{ r.createdAt | date: 'mediumDate' }}</span>
+              </div>
+              <span class="stars sm">
+                @for (s of [1, 2, 3, 4, 5]; track s) {
+                  <mat-icon>{{ s <= r.rating ? 'star' : 'star_border' }}</mat-icon>
+                }
+              </span>
+              @if (r.comment) {
+                <p>{{ r.comment }}</p>
+              }
+            </div>
+          } @empty {
+            <p class="muted">No reviews yet.</p>
+          }
+        </div>
+        @if (auth.isLoggedIn()) {
+          <form class="card stack" [formGroup]="reviewForm" (ngSubmit)="submitReview()">
+            <b>Write a review</b>
+            <mat-button-toggle-group formControlName="rating" hideSingleSelectionIndicator>
+              @for (n of [1, 2, 3, 4, 5]; track n) {
+                <mat-button-toggle [value]="n">{{ n }}★</mat-button-toggle>
+              }
+            </mat-button-toggle-group>
+            <mat-form-field
+              ><mat-label>Comment</mat-label
+              ><textarea matInput rows="3" formControlName="comment"></textarea>
+            </mat-form-field>
+            <button mat-flat-button [disabled]="reviewForm.invalid">Submit</button>
+            <span class="muted sm">Only customers with a delivered order can review.</span>
+          </form>
+        }
+      </div>
+    </section>
+
+    @if (related().length) {
+      <h2 class="rel">You may also like</h2>
+      <div class="grid-products">
+        @for (r of related(); track r._id) {
+          <app-product-card [p]="r" />
+        }
+      </div>
+    }
+  }
+</div>

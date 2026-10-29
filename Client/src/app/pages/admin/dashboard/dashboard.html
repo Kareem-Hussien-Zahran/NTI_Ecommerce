@@ -1,0 +1,76 @@
+<h1 class="page-title">Dashboard</h1>
+@if (s(); as s) {
+  <div class="kpis">
+    <div class="card kpi">
+      <mat-icon>payments</mat-icon><span class="muted">Revenue</span
+      ><b>{{ s.revenue | currency }}</b>
+    </div>
+    <div class="card kpi">
+      <mat-icon>receipt_long</mat-icon><span class="muted">Orders</span><b>{{ s.orders }}</b>
+    </div>
+    <div class="card kpi">
+      <mat-icon>group</mat-icon><span class="muted">Customers</span><b>{{ s.customers }}</b>
+    </div>
+    <div class="card kpi">
+      <mat-icon>inventory_2</mat-icon><span class="muted">Products</span><b>{{ s.products }}</b>
+    </div>
+  </div>
+
+  <div class="card section">
+    <h3>Revenue — last 30 days</h3>
+    @if (s.daily.length) {
+      <div class="chart" role="img" aria-label="Daily revenue bar chart">
+        @for (d of s.daily; track d.date) {
+          <div
+            class="bar"
+            [style.height.%]="(d.revenue / max()) * 100"
+            [title]="d.date + ': ' + (d.revenue | currency)"
+          ></div>
+        }
+      </div>
+      <div class="row between muted xs">
+        <span>{{ s.daily[0].date }}</span
+        ><span>{{ s.daily[s.daily.length - 1].date }}</span>
+      </div>
+    } @else {
+      <p class="muted">No sales in the last 30 days.</p>
+    }
+  </div>
+
+  <div class="cols">
+    <div class="card section">
+      <h3>Orders by status</h3>
+      @for (e of statuses(); track e[0]) {
+        <div class="row between line">
+          <span class="status" [class]="e[0]">{{ e[0] }}</span
+          ><b>{{ e[1] }}</b>
+        </div>
+      } @empty {
+        <p class="muted">No orders yet.</p>
+      }
+    </div>
+    <div class="card section">
+      <h3>Top products</h3>
+      @for (t of s.topProducts; track t._id) {
+        <div class="row between line">
+          <span>{{ t.name }}</span
+          ><span class="muted">{{ t.sold }} sold · {{ t.revenue | currency }}</span>
+        </div>
+      } @empty {
+        <p class="muted">No data yet.</p>
+      }
+    </div>
+    <div class="card section">
+      <h3>Low stock</h3>
+      @for (l of s.lowStock; track l.sku) {
+        <div class="row between line">
+          <span
+            >{{ l.name }} <span class="muted">{{ l.sku }}</span></span
+          ><b [class.red]="l.stock === 0">{{ l.stock }}</b>
+        </div>
+      } @empty {
+        <p class="muted">All stocked up 🎉</p>
+      }
+    </div>
+  </div>
+}

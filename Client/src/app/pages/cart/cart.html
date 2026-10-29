@@ -1,0 +1,81 @@
+<div class="container page">
+  <h1 class="page-title">Shopping cart</h1>
+  @if (!auth.isLoggedIn()) {
+    <div class="empty">
+      <mat-icon>lock</mat-icon>
+      <p>Sign in to see your cart.</p>
+      <a mat-flat-button routerLink="/login" [queryParams]="{ returnUrl: '/cart' }">Sign in</a>
+    </div>
+  } @else if (!c().items.length) {
+    <div class="empty">
+      <mat-icon>shopping_bag</mat-icon>
+      <p>Your cart is empty.</p>
+      <a mat-flat-button routerLink="/shop">Start shopping</a>
+    </div>
+  } @else {
+    <div class="layout-2">
+      <div class="stack">
+        @for (l of c().items; track l.product + l.sku) {
+          <div class="card line">
+            <a [routerLink]="['/product', l.slug]" class="thumb">
+              @if (l.image) {
+                <img [src]="l.image" [alt]="l.name" />
+              }
+            </a>
+            <div class="grow">
+              <a [routerLink]="['/product', l.slug]" class="name">{{ l.name }}</a>
+              <div class="muted">{{ l.color }}{{ l.color && l.size ? ' · ' : '' }}{{ l.size }}</div>
+              @if (!l.available) {
+                <div class="error-text">Only {{ l.stock }} left in stock</div>
+              }
+              <div class="qty">
+                <button
+                  mat-icon-button
+                  (click)="cart.setQty(l.product, l.sku, l.quantity - 1)"
+                  [disabled]="l.quantity <= 1"
+                  aria-label="Decrease quantity"
+                >
+                  <mat-icon>remove</mat-icon>
+                </button>
+                <span>{{ l.quantity }}</span>
+                <button
+                  mat-icon-button
+                  (click)="cart.setQty(l.product, l.sku, l.quantity + 1)"
+                  [disabled]="l.quantity >= l.stock"
+                  aria-label="Increase quantity"
+                >
+                  <mat-icon>add</mat-icon>
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <b>{{ l.lineTotal | currency }}</b
+              ><button mat-icon-button (click)="cart.remove(l.product, l.sku)" aria-label="Remove">
+                <mat-icon>delete_outline</mat-icon>
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+      <aside class="card stack sum">
+        <h3>Order summary</h3>
+        <div class="row between">
+          <span class="muted">Subtotal</span><span>{{ c().subtotal | currency }}</span>
+        </div>
+        <div class="row between">
+          <span class="muted">Shipping</span
+          ><span>{{ c().shippingFee ? (c().shippingFee | currency) : 'Free' }}</span>
+        </div>
+        <div class="row between">
+          <span class="muted">Tax</span><span>{{ c().tax | currency }}</span>
+        </div>
+        <mat-divider />
+        <div class="row between total">
+          <span>Total</span><span>{{ c().total | currency }}</span>
+        </div>
+        <a mat-flat-button routerLink="/checkout" [disabled]="hasIssue()">Checkout</a>
+        <a mat-button routerLink="/shop">Continue shopping</a>
+      </aside>
+    </div>
+  }
+</div>

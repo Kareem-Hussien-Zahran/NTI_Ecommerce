@@ -1,0 +1,44 @@
+<div class="container page">
+  <h1 class="page-title">My orders</h1>
+  @if (data(); as d) {
+    @if (!d.items.length) {
+      <div class="empty">
+        <mat-icon>receipt_long</mat-icon>
+        <p>No orders yet.</p>
+        <a mat-flat-button routerLink="/shop">Start shopping</a>
+      </div>
+    }
+    <div class="stack">
+      @for (o of d.items; track o._id) {
+        <a class="card order" [routerLink]="['/orders', o._id]">
+          <div class="imgs">
+            @for (i of o.items.slice(0, 3); track i.sku) {
+              @if (i.image) {
+                <img [src]="i.image" alt="" />
+              }
+            }
+          </div>
+          <div class="grow">
+            <b>{{ o.orderNumber }}</b>
+            <div class="muted">
+              {{ o.createdAt | date: 'medium' }} · {{ o.items.length }} item{{
+                o.items.length === 1 ? '' : 's'
+              }}
+            </div>
+          </div>
+          <span class="status" [class]="o.status">{{ o.status }}</span>
+          <b>{{ o.total | currency }}</b>
+        </a>
+      }
+    </div>
+    @if (d.meta.pages > 1) {
+      <mat-paginator
+        [length]="d.meta.total"
+        [pageSize]="d.meta.limit"
+        [pageIndex]="d.meta.page - 1"
+        [hidePageSize]="true"
+        (page)="load($event.pageIndex + 1)"
+      />
+    }
+  }
+</div>

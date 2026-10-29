@@ -1,0 +1,38 @@
+<h1 class="page-title">Categories & brands</h1>
+<div class="cols">
+  @for (k of kinds; track k.kind) {
+    <section class="card stack">
+      <h3>{{ k.label }}</h3>
+      <div class="row">
+        <mat-form-field subscriptSizing="dynamic" class="grow"
+          ><mat-label>{{ editing()[k.kind] ? 'Rename' : 'New ' + k.single }}</mat-label>
+          <input
+            matInput
+            [formControl]="inputs[k.kind]"
+            (keydown.enter)="$event.preventDefault(); save(k.kind)"
+        /></mat-form-field>
+        <button mat-flat-button (click)="save(k.kind)" [disabled]="inputs[k.kind].invalid">
+          {{ editing()[k.kind] ? 'Save' : 'Add' }}
+        </button>
+        @if (editing()[k.kind]) {
+          <button mat-button (click)="cancel(k.kind)">Cancel</button>
+        }
+      </div>
+      @for (i of lists()[k.kind]; track i._id) {
+        <div class="row between item">
+          <span>{{ i.name }}</span>
+          <span
+            ><button mat-icon-button (click)="edit(k.kind, i)" aria-label="Edit">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button (click)="remove(k.kind, i)" aria-label="Delete">
+              <mat-icon>delete_outline</mat-icon>
+            </button></span
+          >
+        </div>
+      } @empty {
+        <p class="muted">Nothing here yet.</p>
+      }
+    </section>
+  }
+</div>

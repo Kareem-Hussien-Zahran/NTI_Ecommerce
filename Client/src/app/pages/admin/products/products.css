@@ -1,0 +1,19 @@
+.gap {
+  margin-top: 16px;
+}
+.th {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #eee;
+}
+.xs {
+  font-size: 0.8rem;
+}
+.right {
+  text-align: right;
+}
+td {
+  padding: 8px 16px;
+}

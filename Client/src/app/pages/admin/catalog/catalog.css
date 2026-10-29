@@ -1,0 +1,13 @@
+.cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+.grow {
+  flex: 1;
+}
+.item {
+  padding: 4px 0 4px 4px;
+  border-bottom: 1px solid #eeeeee;
+}

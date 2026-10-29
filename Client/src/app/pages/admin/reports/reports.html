@@ -1,0 +1,303 @@
+<div class="row between wrap">
+  <h1 class="page-title">Reports</h1>
+  <button mat-stroked-button (click)="clearCache()" title="Reports are cached for up to a minute">
+    <mat-icon>cached</mat-icon>Refresh data
+  </button>
+</div>
+
+<form class="card filters" [formGroup]="form" (ngSubmit)="load()">
+  <mat-form-field subscriptSizing="dynamic"
+    ><mat-label>From</mat-label><input matInput type="date" formControlName="from"
+  /></mat-form-field>
+  <mat-form-field subscriptSizing="dynamic"
+    ><mat-label>To</mat-label><input matInput type="date" formControlName="to"
+  /></mat-form-field>
+  <mat-form-field subscriptSizing="dynamic"
+    ><mat-label>Group by</mat-label>
+    <mat-select formControlName="interval"
+      ><mat-option value="day">Day</mat-option><mat-option value="week">Week</mat-option
+      ><mat-option value="month">Month</mat-option></mat-select
+    ></mat-form-field
+  >
+  <div class="row wrap presets">
+    <button mat-button type="button" (click)="preset(7)">7 days</button
+    ><button mat-button type="button" (click)="preset(30)">30 days</button
+    ><button mat-button type="button" (click)="preset(90)">90 days</button>
+  </div>
+  <button mat-flat-button [disabled]="form.invalid || loading()">
+    {{ loading() ? 'Loading…' : 'Apply' }}
+  </button>
+</form>
+
+<mat-tab-group animationDuration="0ms" class="tabs">
+  <mat-tab label="Sales">
+    @if (sales(); as s) {
+      <div class="row between wrap head">
+        <span class="muted">{{ s.range.from }} → {{ s.range.to }}</span
+        ><button mat-stroked-button (click)="csv('sales')"><mat-icon>download</mat-icon>CSV</button>
+      </div>
+      <div class="kpis">
+        <div class="card kpi">
+          <span class="muted">Revenue</span><b>{{ s.totals.revenue | currency }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Orders</span><b>{{ s.totals.orders }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Items sold</span><b>{{ s.totals.items }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Avg. order value</span
+          ><b>{{ s.totals.averageOrderValue | currency }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Cancelled</span><b>{{ s.totals.cancelledOrders }}</b
+          ><span class="muted xs">{{ s.totals.cancelledValue | currency }} lost</span>
+        </div>
+      </div>
+      <div class="card section">
+        <h3>Revenue by {{ s.range.interval }}</h3>
+        <div class="chart" role="img" aria-label="Revenue chart">
+          @for (b of s.series; track b.period) {
+            <div
+              class="bar"
+              [style.height.%]="(b.revenue / maxRevenue()) * 100"
+              [title]="b.period + ' — ' + (b.revenue | currency) + ' · ' + b.orders + ' orders'"
+            ></div>
+          }
+        </div>
+        <div class="row between muted xs">
+          <span>{{ s.series[0].period }}</span
+          ><span>{{ s.series[s.series.length - 1].period }}</span>
+        </div>
+      </div>
+      <div class="two">
+        <div class="card section">
+          <h3>Orders by status</h3>
+          @for (e of entries(s.byStatus); track e[0]) {
+            <div class="row between line">
+              <span class="status" [class]="e[0]">{{ e[0] }}</span
+              ><b>{{ e[1] }}</b>
+            </div>
+          } @empty {
+            <p class="muted">No orders.</p>
+          }
+        </div>
+        <div class="card section">
+          <h3>Revenue by payment</h3>
+          @for (e of entries(s.byPayment); track e[0]) {
+            <div class="row between line">
+              <span>{{ e[0] === 'cod' ? 'Cash on delivery' : 'Card' }}</span
+              ><b>{{ e[1] | currency }}</b>
+            </div>
+          } @empty {
+            <p class="muted">No sales.</p>
+          }
+          <div class="row between line muted">
+            <span>Tax collected</span><span>{{ s.totals.tax | currency }}</span>
+          </div>
+          <div class="row between line muted">
+            <span>Shipping charged</span><span>{{ s.totals.shipping | currency }}</span>
+          </div>
+        </div>
+      </div>
+    } @else {
+      <p class="muted pad">Loading…</p>
+    }
+  </mat-tab>
+
+  <mat-tab label="Products">
+    <div class="row between wrap head">
+      <span class="muted">Best sellers by revenue</span
+      ><button mat-stroked-button (click)="csv('products')">
+        <mat-icon>download</mat-icon>CSV
+      </button>
+    </div>
+    <div class="table-wrap">
+      <table mat-table [dataSource]="products()">
+        <ng-container matColumnDef="name"
+          ><th mat-header-cell *matHeaderCellDef>Product</th>
+          <td mat-cell *matCellDef="let r; let i = index">
+            <b>{{ i + 1 }}.</b> {{ r.name }}
+          </td></ng-container
+        >
+        <ng-container matColumnDef="units"
+          ><th mat-header-cell *matHeaderCellDef>Units</th>
+          <td mat-cell *matCellDef="let r">{{ r.units }}</td></ng-container
+        >
+        <ng-container matColumnDef="orders"
+          ><th mat-header-cell *matHeaderCellDef>Orders</th>
+          <td mat-cell *matCellDef="let r">{{ r.orders }}</td></ng-container
+        >
+        <ng-container matColumnDef="revenue"
+          ><th mat-header-cell *matHeaderCellDef>Revenue</th>
+          <td mat-cell *matCellDef="let r">
+            <b>{{ r.revenue | currency }}</b>
+          </td></ng-container
+        >
+        <tr mat-header-row *matHeaderRowDef="['name', 'units', 'orders', 'revenue']"></tr>
+        <tr mat-row *matRowDef="let r; columns: ['name', 'units', 'orders', 'revenue']"></tr>
+        <tr class="mat-row" *matNoDataRow>
+          <td class="muted pad" colspan="4">No sales in this period.</td>
+        </tr>
+      </table>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Categories">
+    <div class="row between wrap head">
+      <span class="muted">Revenue by category</span
+      ><button mat-stroked-button (click)="csv('categories')">
+        <mat-icon>download</mat-icon>CSV
+      </button>
+    </div>
+    <div class="card stack">
+      @for (c of categories(); track c.category) {
+        <div>
+          <div class="row between">
+            <b>{{ c.category }}</b
+            ><span
+              >{{ c.revenue | currency }}
+              <span class="muted"
+                >· {{ c.units }} {{ c.units === 1 ? 'unit' : 'units' }} ·
+                {{ c.share | percent: '1.0-1' }}</span
+              ></span
+            >
+          </div>
+          <div class="meter"><span [style.width.%]="c.share * 100"></span></div>
+        </div>
+      } @empty {
+        <p class="muted">No sales in this period.</p>
+      }
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Customers">
+    @if (customers(); as c) {
+      <div class="row between wrap head">
+        <span class="muted">Top customers by spend</span
+        ><button mat-stroked-button (click)="csv('customers')">
+          <mat-icon>download</mat-icon>CSV
+        </button>
+      </div>
+      <div class="kpis">
+        <div class="card kpi">
+          <span class="muted">New customers</span><b>{{ c.newCustomers }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Active buyers</span><b>{{ c.activeBuyers }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">All customers</span><b>{{ c.totalCustomers }}</b>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table mat-table [dataSource]="c.top">
+          <ng-container matColumnDef="name"
+            ><th mat-header-cell *matHeaderCellDef>Customer</th>
+            <td mat-cell *matCellDef="let r">
+              <b>{{ r.name }}</b>
+              <div class="muted xs">{{ r.email }}</div>
+            </td></ng-container
+          >
+          <ng-container matColumnDef="orders"
+            ><th mat-header-cell *matHeaderCellDef>Orders</th>
+            <td mat-cell *matCellDef="let r">{{ r.orders }}</td></ng-container
+          >
+          <ng-container matColumnDef="avg"
+            ><th mat-header-cell *matHeaderCellDef>Avg. order</th>
+            <td mat-cell *matCellDef="let r">{{ r.averageOrder | currency }}</td></ng-container
+          >
+          <ng-container matColumnDef="last"
+            ><th mat-header-cell *matHeaderCellDef>Last order</th>
+            <td mat-cell *matCellDef="let r">
+              {{ r.lastOrder | date: 'mediumDate' }}
+            </td></ng-container
+          >
+          <ng-container matColumnDef="spent"
+            ><th mat-header-cell *matHeaderCellDef>Spent</th>
+            <td mat-cell *matCellDef="let r">
+              <b>{{ r.spent | currency }}</b>
+            </td></ng-container
+          >
+          <tr mat-header-row *matHeaderRowDef="['name', 'orders', 'avg', 'last', 'spent']"></tr>
+          <tr mat-row *matRowDef="let r; columns: ['name', 'orders', 'avg', 'last', 'spent']"></tr>
+          <tr class="mat-row" *matNoDataRow>
+            <td class="muted pad" colspan="5">No orders in this period.</td>
+          </tr>
+        </table>
+      </div>
+    }
+  </mat-tab>
+
+  <mat-tab label="Inventory">
+    @if (inventory(); as inv) {
+      <div class="row between wrap head">
+        <mat-form-field subscriptSizing="dynamic" class="thr"
+          ><mat-label>Low-stock threshold</mat-label
+          ><input
+            matInput
+            type="number"
+            min="0"
+            [value]="threshold()"
+            (change)="setThreshold($any($event.target).value)"
+        /></mat-form-field>
+        <button mat-stroked-button (click)="csv('inventory')">
+          <mat-icon>download</mat-icon>CSV
+        </button>
+      </div>
+      <div class="kpis">
+        <div class="card kpi">
+          <span class="muted">Units in stock</span><b>{{ inv.totals.units | number }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Stock value</span><b>{{ inv.totals.stockValue | currency }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Low stock</span><b class="warn">{{ inv.totals.low }}</b>
+        </div>
+        <div class="card kpi">
+          <span class="muted">Out of stock</span><b class="bad">{{ inv.totals.out }}</b>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table mat-table [dataSource]="inv.rows.slice(0, 50)">
+          <ng-container matColumnDef="product"
+            ><th mat-header-cell *matHeaderCellDef>Product</th>
+            <td mat-cell *matCellDef="let r">
+              <b>{{ r.product }}</b>
+              <div class="muted xs">{{ r.sku }} {{ r.color }} {{ r.size }}</div>
+            </td></ng-container
+          >
+          <ng-container matColumnDef="stock"
+            ><th mat-header-cell *matHeaderCellDef>Stock</th>
+            <td mat-cell *matCellDef="let r">{{ r.stock }}</td></ng-container
+          >
+          <ng-container matColumnDef="value"
+            ><th mat-header-cell *matHeaderCellDef>Value</th>
+            <td mat-cell *matCellDef="let r">{{ r.stockValue | currency }}</td></ng-container
+          >
+          <ng-container matColumnDef="status"
+            ><th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let r">
+              <span
+                class="status"
+                [class]="
+                  r.status === 'ok' ? 'delivered' : r.status === 'low' ? 'pending' : 'cancelled'
+                "
+                >{{ r.status }}</span
+              >
+            </td></ng-container
+          >
+          <tr mat-header-row *matHeaderRowDef="['product', 'stock', 'value', 'status']"></tr>
+          <tr mat-row *matRowDef="let r; columns: ['product', 'stock', 'value', 'status']"></tr>
+        </table>
+      </div>
+      @if (inv.rows.length > 50) {
+        <p class="muted xs pad">
+          Showing the 50 lowest-stock variants — download the CSV for all {{ inv.rows.length }}.
+        </p>
+      }
+    }
+  </mat-tab>
+</mat-tab-group>

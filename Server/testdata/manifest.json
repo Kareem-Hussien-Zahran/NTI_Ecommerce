@@ -1,0 +1,17 @@
+{
+  "anchor": "2026-10-28T12:00:00.000Z",
+  "counts": {
+    "users": 19,
+    "categories": 13,
+    "brands": 6,
+    "products": 30,
+    "carts": 5,
+    "orders": 120,
+    "reviews": 31,
+    "activitylogs": 662
+  },
+  "passwords": {
+    "admin": "Admin@12345",
+    "customer": "Test@12345"
+  }
+}

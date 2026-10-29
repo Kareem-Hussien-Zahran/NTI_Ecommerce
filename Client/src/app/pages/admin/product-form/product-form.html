@@ -1,0 +1,153 @@
+<div class="row between wrap">
+  <h1 class="page-title">{{ id() ? 'Edit product' : 'New product' }}</h1>
+  <a mat-button routerLink="/admin/products"><mat-icon>arrow_back</mat-icon>Back</a>
+</div>
+<form [formGroup]="form" (ngSubmit)="save()" class="stack">
+  <section class="card stack">
+    <h3>Details</h3>
+    <mat-form-field
+      ><mat-label>Name</mat-label><input matInput formControlName="name"
+    /></mat-form-field>
+    <mat-form-field
+      ><mat-label>Description</mat-label
+      ><textarea matInput rows="4" formControlName="description"></textarea>
+    </mat-form-field>
+    <div class="grid-2">
+      <mat-form-field
+        ><mat-label>Price</mat-label
+        ><input matInput type="number" min="0" step="0.01" formControlName="price"
+      /></mat-form-field>
+      <mat-form-field
+        ><mat-label>Compare-at price (optional)</mat-label
+        ><input matInput type="number" min="0" step="0.01" formControlName="compareAtPrice"
+      /></mat-form-field>
+      <mat-form-field
+        ><mat-label>Category</mat-label
+        ><mat-select formControlName="category">
+          @for (c of categories(); track c._id) {
+            <mat-option [value]="c._id">{{ c.name }}</mat-option>
+          }
+        </mat-select></mat-form-field
+      >
+      <mat-form-field
+        ><mat-label>Brand</mat-label
+        ><mat-select formControlName="brand">
+          @for (b of brands(); track b._id) {
+            <mat-option [value]="b._id">{{ b.name }}</mat-option>
+          }
+        </mat-select></mat-form-field
+      >
+      <mat-form-field
+        ><mat-label>For</mat-label
+        ><mat-select formControlName="gender">
+          @for (g of genders; track g) {
+            <mat-option [value]="g">{{ g }}</mat-option>
+          }
+        </mat-select></mat-form-field
+      >
+      <mat-form-field
+        ><mat-label>Type</mat-label
+        ><mat-select formControlName="productType">
+          @for (t of types; track t) {
+            <mat-option [value]="t">{{ t }}</mat-option>
+          }
+        </mat-select></mat-form-field
+      >
+    </div>
+    <mat-form-field
+      ><mat-label>Tags (comma separated)</mat-label><input matInput formControlName="tags"
+    /></mat-form-field>
+    <div class="row wrap">
+      <mat-slide-toggle formControlName="featured">Featured</mat-slide-toggle
+      ><mat-slide-toggle formControlName="isActive">Visible in shop</mat-slide-toggle>
+    </div>
+  </section>
+
+  <section class="card stack">
+    <h3>Images</h3>
+    <div class="row wrap">
+      @for (src of images(); track src; let i = $index) {
+        <div class="img">
+          <img [src]="src" alt="" /><button
+            type="button"
+            mat-icon-button
+            (click)="removeImage(i)"
+            aria-label="Remove image"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+      }
+      <label class="upload"
+        ><mat-icon>add_photo_alternate</mat-icon
+        ><span>{{ uploading() ? 'Uploading…' : 'Upload' }}</span>
+        <input
+          type="file"
+          accept="image/png,image/jpeg,image/webp"
+          multiple
+          hidden
+          (change)="upload($event)"
+      /></label>
+    </div>
+    <span class="muted xs">JPG, PNG or WebP, up to 2 MB each.</span>
+  </section>
+
+  <section class="card stack">
+    <div class="row between">
+      <h3>Variants</h3>
+      <button mat-stroked-button type="button" (click)="addVariant()">
+        <mat-icon>add</mat-icon>Add variant
+      </button>
+    </div>
+    @for (v of variants.controls; track v; let i = $index) {
+      <div class="variant" [formGroup]="v">
+        <mat-form-field subscriptSizing="dynamic"
+          ><mat-label>SKU</mat-label><input matInput formControlName="sku"
+        /></mat-form-field>
+        <mat-form-field subscriptSizing="dynamic"
+          ><mat-label>Size</mat-label
+          ><mat-select formControlName="size"
+            ><mat-option [value]="''">—</mat-option>
+            @for (s of sizes; track s) {
+              <mat-option [value]="s">{{ s }}</mat-option>
+            }
+          </mat-select></mat-form-field
+        >
+        <mat-form-field subscriptSizing="dynamic"
+          ><mat-label>Color</mat-label><input matInput formControlName="colorName"
+        /></mat-form-field>
+        <mat-form-field subscriptSizing="dynamic" class="sm"
+          ><mat-label>Hex</mat-label
+          ><input matInput formControlName="colorCode" placeholder="#111111"
+        /></mat-form-field>
+        <mat-form-field subscriptSizing="dynamic" class="sm"
+          ><mat-label>Stock</mat-label
+          ><input matInput type="number" min="0" formControlName="stock"
+        /></mat-form-field>
+        <mat-form-field subscriptSizing="dynamic" class="sm"
+          ><mat-label>Price*</mat-label
+          ><input matInput type="number" min="0" formControlName="price"
+        /></mat-form-field>
+        <button
+          mat-icon-button
+          type="button"
+          (click)="variants.removeAt(i)"
+          [disabled]="variants.length < 2"
+          aria-label="Remove variant"
+        >
+          <mat-icon>delete_outline</mat-icon>
+        </button>
+      </div>
+    }
+    <span class="muted xs">* Optional price override for a single variant.</span>
+  </section>
+
+  @if (error()) {
+    <div class="error-text">{{ error() }}</div>
+  }
+  <div class="row">
+    <button mat-flat-button [disabled]="form.invalid || saving()">
+      {{ saving() ? 'Saving…' : 'Save product' }}</button
+    ><a mat-button routerLink="/admin/products">Cancel</a>
+  </div>
+</form>

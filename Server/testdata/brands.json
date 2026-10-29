@@ -1,0 +1,86 @@
+[
+ {
+  "_id": {
+   "$oid": "b30000000000000000000001"
+  },
+  "name": "Nile Threads",
+  "slug": "nile-threads",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "b30000000000000000000002"
+  },
+  "name": "Crimson Co.",
+  "slug": "crimson-co",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "b30000000000000000000003"
+  },
+  "name": "Urban Pharaoh",
+  "slug": "urban-pharaoh",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "b30000000000000000000004"
+  },
+  "name": "Delta Denim",
+  "slug": "delta-denim",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "b30000000000000000000005"
+  },
+  "name": "Sahara Sole",
+  "slug": "sahara-sole",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "b30000000000000000000006"
+  },
+  "name": "Luxor Luxe",
+  "slug": "luxor-luxe",
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ }
+]

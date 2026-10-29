@@ -1,0 +1,228 @@
+[
+ {
+  "_id": {
+   "$oid": "c20000000000000000000001"
+  },
+  "name": "Men",
+  "slug": "men",
+  "description": "Menswear",
+  "parent": null,
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000002"
+  },
+  "name": "Women",
+  "slug": "women",
+  "description": "Womenswear",
+  "parent": null,
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000003"
+  },
+  "name": "Kids",
+  "slug": "kids",
+  "description": "Kidswear",
+  "parent": null,
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000004"
+  },
+  "name": "Accessories",
+  "slug": "accessories",
+  "description": "Bags, belts & more",
+  "parent": null,
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000005"
+  },
+  "name": "Men T-Shirts",
+  "slug": "men-t-shirts",
+  "description": "Men's t-shirts",
+  "parent": {
+   "$oid": "c20000000000000000000001"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000006"
+  },
+  "name": "Men Jeans",
+  "slug": "men-jeans",
+  "description": "Men's jeans",
+  "parent": {
+   "$oid": "c20000000000000000000001"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000007"
+  },
+  "name": "Men Jackets",
+  "slug": "men-jackets",
+  "description": "Men's jackets",
+  "parent": {
+   "$oid": "c20000000000000000000001"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000008"
+  },
+  "name": "Men Hoodies",
+  "slug": "men-hoodies",
+  "description": "Men's hoodies",
+  "parent": {
+   "$oid": "c20000000000000000000001"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000009"
+  },
+  "name": "Women Dresses",
+  "slug": "women-dresses",
+  "description": "Women's dresses",
+  "parent": {
+   "$oid": "c20000000000000000000002"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000010"
+  },
+  "name": "Women Tops",
+  "slug": "women-tops",
+  "description": "Women's tops",
+  "parent": {
+   "$oid": "c20000000000000000000002"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000011"
+  },
+  "name": "Women Skirts",
+  "slug": "women-skirts",
+  "description": "Women's skirts",
+  "parent": {
+   "$oid": "c20000000000000000000002"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000012"
+  },
+  "name": "Women Shoes",
+  "slug": "women-shoes",
+  "description": "Women's shoes",
+  "parent": {
+   "$oid": "c20000000000000000000002"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "c20000000000000000000013"
+  },
+  "name": "Kids Sets",
+  "slug": "kids-sets",
+  "description": "Matching sets",
+  "parent": {
+   "$oid": "c20000000000000000000003"
+  },
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ }
+]

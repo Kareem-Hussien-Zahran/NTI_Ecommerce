@@ -1,0 +1,82 @@
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.head {
+  margin-bottom: 8px;
+}
+.head .page-title {
+  margin: 0;
+}
+.track {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 24px;
+  padding: 20px 28px;
+  overflow-x: auto;
+  gap: 16px;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--app-muted);
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  flex: 1;
+  min-width: 70px;
+}
+.dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e7e7ef;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.dot mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.step.done {
+  color: var(--mat-sys-on-surface);
+}
+.step.done .dot {
+  background: var(--ink);
+}
+.step.done:last-child .dot {
+  background: var(--crimson);
+  color: var(--white);
+}
+.thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ececec;
+  flex: none;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grow {
+  flex: 1;
+}
+.line {
+  padding: 4px 0;
+}
+.total {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.addr {
+  line-height: 1.6;
+  margin: 8px 0 0;
+}

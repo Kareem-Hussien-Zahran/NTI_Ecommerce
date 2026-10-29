@@ -1,0 +1,789 @@
+[
+ {
+  "_id": {
+   "$oid": "a10000000000000000000001"
+  },
+  "firstName": "Store",
+  "lastName": "Admin",
+  "dateOfBirth": {
+   "$date": "1988-11-06T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "admin@store.test",
+  "password": "$2b$10$/Dq7XjnscyFspiUPn4eGi.K9oOH5PYvqepA2Ceu0zQeR60lcwcWdu",
+  "phone": "+201061540581",
+  "address": {
+   "fullName": "Store Admin",
+   "phone": "+201098186987",
+   "street": "10 Tahrir St",
+   "city": "Cairo",
+   "state": "Cairo Governorate",
+   "postalCode": "23718",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "admin",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-05-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000002"
+  },
+  "firstName": "Ops",
+  "lastName": "Admin",
+  "dateOfBirth": {
+   "$date": "1994-11-05T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "ops@store.test",
+  "password": "$2b$10$/Dq7XjnscyFspiUPn4eGi.K9oOH5PYvqepA2Ceu0zQeR60lcwcWdu",
+  "phone": "+201087706926",
+  "address": {
+   "fullName": "Ops Admin",
+   "phone": "+201033264487",
+   "street": "56 Salah Salem St",
+   "city": "Alexandria",
+   "state": "Alexandria Governorate",
+   "postalCode": "14806",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "admin",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-06-10T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-10T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000003"
+  },
+  "firstName": "Amira",
+  "lastName": "Ibrahim",
+  "dateOfBirth": {
+   "$date": "1985-11-07T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer1@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201056544517",
+  "address": {
+   "fullName": "Amira Ibrahim",
+   "phone": "+201024303456",
+   "street": "84 Pyramids Rd",
+   "city": "Mansoura",
+   "state": "Dakahlia",
+   "postalCode": "66704",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000020"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-06-28T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-06-28T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000004"
+  },
+  "firstName": "Omar",
+  "lastName": "Mahmoud",
+  "dateOfBirth": {
+   "$date": "1995-11-05T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer2@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201035113892",
+  "address": {
+   "fullName": "Omar Mahmoud",
+   "phone": "+201073022967",
+   "street": "61 Corniche Rd",
+   "city": "Mansoura",
+   "state": "Dakahlia",
+   "postalCode": "26495",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000020"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-07-06T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-06T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000005"
+  },
+  "firstName": "Layla",
+  "lastName": "Farouk",
+  "dateOfBirth": {
+   "$date": "1990-11-06T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer3@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201095310470",
+  "address": {
+   "fullName": "Layla Farouk",
+   "phone": "+201072393911",
+   "street": "37 Pyramids Rd",
+   "city": "Tanta",
+   "state": "Gharbia",
+   "postalCode": "95034",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000024"
+   },
+   {
+    "$oid": "d40000000000000000000019"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-07-14T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-14T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000006"
+  },
+  "firstName": "Youssef",
+  "lastName": "Saleh",
+  "dateOfBirth": {
+   "$date": "2002-11-03T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer4@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201080103755",
+  "address": {
+   "fullName": "Youssef Saleh",
+   "phone": "+201075377727",
+   "street": "18 Corniche Rd",
+   "city": "Mansoura",
+   "state": "Dakahlia",
+   "postalCode": "51442",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-07-22T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-22T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000007"
+  },
+  "firstName": "Nour",
+  "lastName": "Nasser",
+  "dateOfBirth": {
+   "$date": "1981-11-08T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer5@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201051037650",
+  "address": {
+   "fullName": "Nour Nasser",
+   "phone": "+201027265397",
+   "street": "116 Nile St",
+   "city": "Cairo",
+   "state": "Cairo Governorate",
+   "postalCode": "19643",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000006"
+   },
+   {
+    "$oid": "d40000000000000000000013"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-07-30T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-07-30T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000008"
+  },
+  "firstName": "Karim",
+  "lastName": "Khalil",
+  "dateOfBirth": {
+   "$date": "1986-11-07T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer6@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201093321051",
+  "address": {
+   "fullName": "Karim Khalil",
+   "phone": "+201094164413",
+   "street": "82 Corniche Rd",
+   "city": "Giza",
+   "state": "Giza Governorate",
+   "postalCode": "99294",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000004"
+   },
+   {
+    "$oid": "d40000000000000000000015"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-08-07T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-08-07T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000009"
+  },
+  "firstName": "Salma",
+  "lastName": "Fathy",
+  "dateOfBirth": {
+   "$date": "1982-11-08T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer7@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201092825129",
+  "address": {
+   "fullName": "Salma Fathy",
+   "phone": "+201099621146",
+   "street": "53 Nile St",
+   "city": "Cairo",
+   "state": "Cairo Governorate",
+   "postalCode": "88148",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000015"
+   },
+   {
+    "$oid": "d40000000000000000000024"
+   },
+   {
+    "$oid": "d40000000000000000000020"
+   },
+   {
+    "$oid": "d40000000000000000000003"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-08-15T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-08-15T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000010"
+  },
+  "firstName": "Hassan",
+  "lastName": "Zaki",
+  "dateOfBirth": {
+   "$date": "2006-11-02T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer8@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201011221186",
+  "address": {
+   "fullName": "Hassan Zaki",
+   "phone": "+201077445326",
+   "street": "98 Pyramids Rd",
+   "city": "Cairo",
+   "state": "Cairo Governorate",
+   "postalCode": "94248",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000004"
+   },
+   {
+    "$oid": "d40000000000000000000021"
+   },
+   {
+    "$oid": "d40000000000000000000003"
+   },
+   {
+    "$oid": "d40000000000000000000022"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-08-23T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-08-23T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000011"
+  },
+  "firstName": "Mariam",
+  "lastName": "Samir",
+  "dateOfBirth": {
+   "$date": "1997-11-04T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer9@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201057369053",
+  "address": {
+   "fullName": "Mariam Samir",
+   "phone": "+201074579467",
+   "street": "66 Tahrir St",
+   "city": "Tanta",
+   "state": "Gharbia",
+   "postalCode": "56262",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000015"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-08-31T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-08-31T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000012"
+  },
+  "firstName": "Ali",
+  "lastName": "Hassan",
+  "dateOfBirth": {
+   "$date": "1986-11-07T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer10@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201054554693",
+  "address": {
+   "fullName": "Ali Hassan",
+   "phone": "+201092267557",
+   "street": "103 Tahrir St",
+   "city": "Mansoura",
+   "state": "Dakahlia",
+   "postalCode": "63569",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000024"
+   },
+   {
+    "$oid": "d40000000000000000000021"
+   },
+   {
+    "$oid": "d40000000000000000000028"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-08T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-08T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000013"
+  },
+  "firstName": "Dina",
+  "lastName": "Ibrahim",
+  "dateOfBirth": {
+   "$date": "1983-11-08T12:00:00.000Z"
+  },
+  "gender": "female",
+  "email": "customer11@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201068230206",
+  "address": {
+   "fullName": "Dina Ibrahim",
+   "phone": "+201075403966",
+   "street": "53 Tahrir St",
+   "city": "Giza",
+   "state": "Giza Governorate",
+   "postalCode": "56714",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [
+   {
+    "$oid": "d40000000000000000000020"
+   },
+   {
+    "$oid": "d40000000000000000000009"
+   },
+   {
+    "$oid": "d40000000000000000000024"
+   },
+   {
+    "$oid": "d40000000000000000000021"
+   }
+  ],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-16T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-16T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000014"
+  },
+  "firstName": "Tarek",
+  "lastName": "Mahmoud",
+  "dateOfBirth": {
+   "$date": "1989-11-06T12:00:00.000Z"
+  },
+  "gender": "male",
+  "email": "customer12@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201036338930",
+  "address": {
+   "fullName": "Tarek Mahmoud",
+   "phone": "+201049242432",
+   "street": "15 Pyramids Rd",
+   "city": "Giza",
+   "state": "Giza Governorate",
+   "postalCode": "22073",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-24T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-24T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000015"
+  },
+  "firstName": "Suspended",
+  "lastName": "User",
+  "dateOfBirth": {
+   "$date": "1982-11-08T12:00:00.000Z"
+  },
+  "gender": null,
+  "email": "suspended@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201096498814",
+  "address": {
+   "fullName": "Suspended User",
+   "phone": "+201080319857",
+   "street": "56 Nile St",
+   "city": "Aswan",
+   "state": "Aswan",
+   "postalCode": "18384",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "suspended",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-08-29T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-08-29T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000016"
+  },
+  "firstName": "Banned",
+  "lastName": "User",
+  "dateOfBirth": {
+   "$date": "2006-11-02T12:00:00.000Z"
+  },
+  "gender": null,
+  "email": "banned@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201070522084",
+  "address": {
+   "fullName": "Banned User",
+   "phone": "+201043234124",
+   "street": "17 Nile St",
+   "city": "Mansoura",
+   "state": "Dakahlia",
+   "postalCode": "26314",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "banned",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-03T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-03T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000017"
+  },
+  "firstName": "Inactive",
+  "lastName": "User",
+  "dateOfBirth": {
+   "$date": "1997-11-04T12:00:00.000Z"
+  },
+  "gender": null,
+  "email": "inactive@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201017982331",
+  "address": {
+   "fullName": "Inactive User",
+   "phone": "+201032175881",
+   "street": "2 Corniche Rd",
+   "city": "Giza",
+   "state": "Giza Governorate",
+   "postalCode": "44199",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "inactive",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-08T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-08T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000018"
+  },
+  "firstName": "Locked",
+  "lastName": "Out",
+  "dateOfBirth": {
+   "$date": "1986-11-07T12:00:00.000Z"
+  },
+  "gender": null,
+  "email": "locked@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201086225931",
+  "address": {
+   "fullName": "Locked Out",
+   "phone": "+201069306593",
+   "street": "27 Pyramids Rd",
+   "city": "Alexandria",
+   "state": "Alexandria Governorate",
+   "postalCode": "73603",
+   "country": "Egypt"
+  },
+  "isEmailVerified": true,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": {
+   "$date": "2026-11-27T12:00:00.000Z"
+  },
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-09-13T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-13T12:00:00.000Z"
+  },
+  "__v": 0
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000019"
+  },
+  "firstName": "Unverified",
+  "lastName": "New",
+  "dateOfBirth": {
+   "$date": "2000-11-03T12:00:00.000Z"
+  },
+  "gender": null,
+  "email": "unverified@store.test",
+  "password": "$2b$10$wUfzf.3gjm6yUC2iwLRFzOjfKoPusvKlQFFRBt9SqmgSCaXxiVcRm",
+  "phone": "+201036387642",
+  "address": {
+   "fullName": "Unverified New",
+   "phone": "+201042205508",
+   "street": "22 Tahrir St",
+   "city": "Alexandria",
+   "state": "Alexandria Governorate",
+   "postalCode": "13967",
+   "country": "Egypt"
+  },
+  "isEmailVerified": false,
+  "role": "customer",
+  "status": "active",
+  "wishlist": [],
+  "failedLoginAttempts": 0,
+  "lockUntil": null,
+  "refreshTokens": [],
+  "createdAt": {
+   "$date": "2026-10-26T12:00:00.000Z"
+  },
+  "updatedAt": {
+   "$date": "2026-10-26T12:00:00.000Z"
+  },
+  "__v": 0
+ }
+]

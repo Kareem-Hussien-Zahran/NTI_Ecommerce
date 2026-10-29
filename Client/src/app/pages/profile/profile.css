@@ -1,0 +1,12 @@
+.narrow {
+  max-width: 760px;
+}
+.tabs {
+  margin-top: 16px;
+}
+.card {
+  margin-top: 20px;
+}
+.danger h3 {
+  color: var(--mat-sys-error);
+}
